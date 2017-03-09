@@ -2,3 +2,15 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+.grid {
+  width: 725px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.card {
+  height: 28px;
+  width: 29px;
+  // border: 1px solid yellow;
+}

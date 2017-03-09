@@ -1,0 +1,17 @@
+  <div class="row">
+    <div class="col-xs-12 col-lg-2">
+      <h1>Description</h1>
+    </div>
+
+    <div class="col-xs-12 col-lg-8">
+      <div class="grid">
+        <% @cards.each do |card|%>
+          <div class="card" id="<%= card.id %>" style="background-image: url('<%= image_path(card.picture) %>')"></div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-lg-2">
+      <h1>Widget</h1>
+    </div>
+  </div>
