@@ -2,7 +2,7 @@ class CreateCards < ActiveRecord::Migration[5.0]
   def change
     create_table :cards do |t|
       t.boolean :turned
-      t.boolean :last_turned
+      t.boolean :last_turned, default: false
       t.references :user, foreign_key: true
 
       t.timestamps
