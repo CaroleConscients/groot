@@ -11,7 +11,6 @@ class User < ApplicationRecord
 
   def unlock_a_card
     card = Card.where(turned: false).order("RANDOM()").first
-    raise
     unless card.nil?
       card.turned = true
       # card.last_turned = true
