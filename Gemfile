@@ -20,6 +20,9 @@ gem 'autoprefixer-rails'
 # Attach image to cards
 gem "paperclip", "~> 5.0.0"
 
+# connect with twitter
+gem 'omniauth-twitter'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
