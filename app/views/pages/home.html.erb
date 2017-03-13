@@ -20,4 +20,12 @@
     </div>
   </div>
 
+  <!-- Modal connect with twitter -->
   <%= render "devise/registrations/new" %>
+
+  <!-- Congratulation card  -->
+  <% if user_signed_in? %>
+    <%= render "pages/congratulation" %>
+  <% end %>
+  
+
