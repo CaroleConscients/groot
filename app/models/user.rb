@@ -13,7 +13,7 @@ class User < ApplicationRecord
     card = Card.where(turned: false).order("RANDOM()").first
     unless card.nil?
       card.turned = true
-      # card.last_turned = true
+      card.last_turned = true
       card.save
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
