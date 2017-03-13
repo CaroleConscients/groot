@@ -15,6 +15,7 @@ class User < ApplicationRecord
     unless card.nil?
       card.turned = true
       card.last_turned = true
+      card.tree_id = User.count
       card.user = self
       card.save
     else
