@@ -18,6 +18,7 @@ class User < ApplicationRecord
       card.tree_id = User.count
       card.user = self
       card.save
+      UserMailer.certificate(self).deliver_now
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
     end
