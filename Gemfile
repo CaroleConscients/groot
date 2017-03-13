@@ -27,7 +27,8 @@ gem 'social-share-button'
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
-
+  # reading mails in test
+  gem 'letter_opener'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
