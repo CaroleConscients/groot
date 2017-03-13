@@ -2,9 +2,13 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+// $base-font: "Open Sans", "Helvetica", "sans-serif";
+// $header-font: "Raleway", "Helvetica", "sans-serif";
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900');
+$header-font: "Cinzel", "serif";
+$base-font: "Cinzel", "serif";
+
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -17,6 +21,8 @@ $header-font: "Raleway", "Helvetica", "sans-serif";
 // $my-font: "Font Name";
 
 // Font-size and line-height
+$header-size: 12px;
+$header-height: 1;
 $base-size: 16px;
 $base-height: 1.4;
 

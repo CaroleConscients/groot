@@ -5,8 +5,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     card = Card.where(last_turned: true)
     card.last.user_id = user
 
-    raise
-
     if user.persisted?
       flash.notice = "Vous avez dejà planté groot #{User.count}! "
       sign_in_and_redirect user
