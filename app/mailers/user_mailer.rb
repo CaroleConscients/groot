@@ -6,4 +6,5 @@ class UserMailer < ApplicationMailer
     mail(to: @user.email, subject: 'Your certificate')
      # This will render a view in `app/views/user_mailer`!
   end
+  
 end
