@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20170313104955) do
 
   create_table "cards", force: :cascade do |t|
     t.boolean  "turned"
-    t.boolean  "last_turned",          default: false
+    t.boolean  "last_turned"
     t.integer  "user_id"
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.string   "picture_file_name"
     t.string   "picture_content_type"
     t.integer  "picture_file_size"

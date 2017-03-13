@@ -11,9 +11,11 @@ class User < ApplicationRecord
 
   def unlock_a_card
     card = Card.where(turned: false).order("RANDOM()").first
+    reset_turned
     unless card.nil?
       card.turned = true
       card.last_turned = true
+      card.user = self
       card.save
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
@@ -35,6 +37,13 @@ class User < ApplicationRecord
       user.save
     end
     return user
+  end
+
+  def reset_turned
+    last_turned_card = Card.where(last_turned: true)
+    unless last_turned_card.nil?
+      last_turned_card.update(last_turned: false)
+    end
   end
 end
 

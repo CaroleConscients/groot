@@ -2,13 +2,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def twitter
     user = User.find_for_twitter_oauth(request.env['omniauth.auth'])
-    card = Card.where(last_turned: true)
-    card.last.user_id = user
-
-    raise
 
     if user.persisted?
-      flash.notice = "Vous avez dejà planté groot #{User.count}! "
+      flash.notice = "Vous avez dejà planté le groot #{user.card.tree_id}! "
       sign_in_and_redirect user
     else
       flash.notice = "Oups, votre authentifaction twitter a échoué."
