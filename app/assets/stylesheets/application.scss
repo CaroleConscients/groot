@@ -14,9 +14,11 @@
 @import "pages/index";
 @import "vendor/index";
 
+@import "components/grootgrid";
+
 body {
-  margin-top: 46px;
-  background-color: #00001e;
+  margin-top: 65px;
+  background-color: $darkblueone;
   color: #f1f7f9;
 }
 
