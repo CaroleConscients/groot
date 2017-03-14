@@ -6,9 +6,12 @@
   margin: 0;
   text-align: center;
   color: white;
+  letter-spacing: 2px;
+  // font-size: 1.2rem;
 }
 .alert-info {
-  background: $green;
+  background: #fae98e;
+  color: #0f183f;
 }
 .alert-warning {
   background: $red;

@@ -2,7 +2,6 @@
 .navbar-groot {
   background-color: #00001e;
   padding: 0px 20px;
-  text-shadow: 0px 3px black;
   border-bottom: 1px solid #beab6f;
   transition: all 0.3s ease;
   display: flex;
@@ -16,55 +15,61 @@
   width: 100%;
 }
 
+.navbar-text-small {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
 
-.navbar-link-button {
+.navbar-round-btn {
   // background-color: #191c3b;
   width: 34px;
   height: 34px;
   border-radius: 17px;
-  // box-shadow: 1px 1px black;
   color: #f1f7f9;
-  font-size: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(15, 24, 63, 0.6);
-  // box-shadow: rgba(0, 0, 0, 0.901961) -1px 0px 1px 0px;
-}
+  box-shadow: #294760 -1px 0px 1px 0px;
+  // box on dr strange : box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
 
-.navbar-link-button-left:hover {
-  background-color: #191c3b;
-  color: #beab6f;
-  text-decoration: none;
 }
-
-#btn-groot-left {
-      box-shadow: rgba(0, 0, 0, 0.901961) -6px 0px 3px 0px;
-    }
-#btn-groot-right {
-      box-shadow: #3e4266 -2px 0px 2px 0px;
-    }
 
 /* Navbar right section (with form, links, button) */
 .navbar-wagon-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navbar-groot-btn-plant {
-  // background-color: #0c1236;
-  // color: #f1f7f9;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  height: 75%;
   cursor: pointer;
-  background: #0f183f;
+  background-color: #0f183f;
   color: #f1f7f9;
-  border: none;
+  text-shadow: 0px 3px black;
+  // border: none;
+  // box-shadow: #294760 0px 1px 2px 1px;
   font-size: 1.3rem;
-  padding: 0 0.75em;
-  line-height: 2.5em;
+  letter-spacing: 2px
 }
 
-
+.navbar-groot-btn-plant:hover, .navbar-round-btn:hover{
+  color: #f1f7f9;
+  text-decoration: none;
+  transform: scale(1.15);
+  // opacity: 0.75;
+  // transition: opacity 0.7s ease-in-out;
+}
+// quand on appuie
+.navbar-groot-btn-plant:active{
+  color: red;
+  text-decoration: none;
+  box-shadow: #294760 0px 1px 2px 1px;
+}
 
 
 /* Navbar dropdown menu */
