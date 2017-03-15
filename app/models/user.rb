@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   def unlock_a_card
     card = Card.where(turned: false).order("RANDOM()").first
-    # reset last_turned to false
+    # reset last_turned card to false
     reset_last_turned
     unless card.nil?
       card.update(turned: true, last_turned: true, tree_id: User.count, user: self)
