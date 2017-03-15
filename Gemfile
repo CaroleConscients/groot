@@ -17,16 +17,18 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
-# Attach image to cards
+# attach image to cards
 gem "paperclip", "~> 5.0.0"
-
 # connect with twitter
 gem 'omniauth-twitter'
+# share on social networks
+gem 'social-share-button'
 
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
-
+  # reading mails in test
+  gem 'letter_opener'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
