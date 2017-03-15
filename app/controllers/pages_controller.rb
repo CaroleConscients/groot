@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   # HTML certificate to convert to pdf
+  # The navbar is escaped in that view cf:layout
   def certificate
     @user = current_user
   end
@@ -13,7 +14,8 @@ class PagesController < ApplicationController
   # Required by twitter
   def privacy
   end
-
+  
   def terms
   end
+
 end
