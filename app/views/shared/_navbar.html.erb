@@ -1,13 +1,11 @@
-<div class="navbar">
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-project" do %>
-    <%= image_tag "logo.png" %>
-  <% end %>
-
+<div class="navbar-groot">
+  <!-- Projet -->
+    <%= link_to "PROJET", root_path, class: "navbar-round-btn navbar-text-small"%>
   <!-- plant a groot -->
-  <%= link_to 'Plant a groot', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'btn btn-small btn-success' %>
+  <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-groot-btn-plant' %>
+
   <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+  <div class="hidden-xs hidden-sm">
 
 
     <!-- Different navigation if login or not -->
@@ -35,8 +33,7 @@
     <% else %>
 
       <!-- Login text link -->
-        <%= link_to "", user_twitter_omniauth_authorize_path, class: "fa fa-twitter-square" %>
-
+        <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-round-btn fa fa-user" %>
     <% end %>
 
   </div>

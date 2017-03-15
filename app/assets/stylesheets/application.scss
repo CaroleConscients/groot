@@ -13,3 +13,14 @@
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+@import "components/grootgrid";
+
+body {
+  margin-top: 65px;
+  background-color: $darkblueone;
+  color: #f1f7f9;
+}
+
+
+// style="box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px; border-color: rgb(241, 247, 249);"
