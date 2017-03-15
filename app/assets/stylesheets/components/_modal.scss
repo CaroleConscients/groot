@@ -5,16 +5,34 @@
   opacity: 0.75;
 }
 
-// container de la modal
-.groot-modal-dialog {
-  // width: 50%
-  margin: 62px auto;
+.groot-modal-close {
+  color: $text-white;
+  opacity: 1;
+  text-shadow: none;
 }
 
+.groot-modal-close:hover {
+  color: $text-white;
+  opacity: 1;
+  text-shadow: none;
+}
 
-// .groot-modal-content
+// container de la modal
+.groot-modal-dialog {
+  width: 45%;
+  margin: 65px auto;
+}
 
-// .groot-modal-header
+.groot-modal-content {
+  background-color: $darkblueone;
+  // opacity: 0.85;
+  height: 450px;
+  border: none;
+}
+
+.groot-modal-header {
+  border: none;
+}
 
 // .groot-modal-title
 
@@ -22,6 +40,8 @@
 
 // .groot-modal-p
 
-// .groot-modal-footer
+.groot-modal-footer {
+  border: none;
+}
 
 // .groot-modal-a
