@@ -17,6 +17,12 @@
   width: 100%;
 }
 
+// To add share on fb and twitter mais pbm de padding right
+// .navbar-right {
+//     display: flex;
+//     justify-content: space-around;
+// }
+
 .navbar-text-small {
   font-size: 8px;
   letter-spacing: 1px;
@@ -34,13 +40,6 @@
   // box-shadow: #294760 -1px 0px 1px 0px;
   // box on dr strange : box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
 
-}
-
-/* Navbar right section (with form, links, button) */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .navbar-groot-btn-plant {

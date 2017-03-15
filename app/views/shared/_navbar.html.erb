@@ -33,7 +33,12 @@
     <% else %>
 
       <!-- Login text link -->
+      <!-- // To add share on fb and twitter -->
+      <!-- <div class="navbar-right"> -->
+        <%#= link_to "", root_path, class: "navbar-round-btn fa fa-facebook"%>
+        <%#= link_to "", root_path, class: "navbar-round-btn fa fa-twitter"%>
         <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-round-btn fa fa-user" %>
+      <!-- </div> -->
     <% end %>
 
   </div>
