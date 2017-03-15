@@ -26,6 +26,8 @@ gem 'social-share-button'
 # delayed jobs for emails
 gem 'sidekiq'
 gem 'sidekiq-failures'
+# convert to pdf
+gem 'wicked_pdf'
 
 group :development, :test do
   gem 'binding_of_caller'
