@@ -1,1 +1,22 @@
-<h1 id="coucou">Hello</h1>
+<div class="certificate" style="background-image: url('<%= image_path('certificate.jpg') %>');">
+  <p><%= @user.name.nil? ? @user.email : @user.name %></p>
+  <p><%= @user.card.tree_id %></p>
+</div>
+
+
+
+<!-- Style inline for pdf -->
+<style>
+  body {
+    background-color: white;
+    margin-top: 0px;
+  }
+  p {
+    color: black;
+  }
+  .certificate {
+    height: 1240px;
+    width: 1754px;
+    background-size: cover
+  }
+</style>
