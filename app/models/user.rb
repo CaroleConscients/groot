@@ -18,8 +18,10 @@ class User < ApplicationRecord
       card.tree_id = User.count
       card.user = self
       card.save
+      self.congratuation = true
+      self.save
       # change this to deliver 1min later or 30seconds later
-      UserMailer.certificate(self).deliver_now
+      UserMailer.certificate(self.id).deliver_later(wait: 1.minute)
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
     end
