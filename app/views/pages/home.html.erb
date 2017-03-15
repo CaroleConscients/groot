@@ -24,7 +24,7 @@
   <%= render "devise/registrations/new" %>
 
   <!-- Congratulation card  -->
-  <% if user_signed_in? && current_user.Congratulation %>
+  <% if user_signed_in? && current_user.congratulation %>
     <%= render "pages/congratulation" %>
   <% end %>
   
