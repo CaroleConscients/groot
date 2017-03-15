@@ -28,6 +28,7 @@ gem 'sidekiq'
 gem 'sidekiq-failures'
 # convert to pdf
 gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary' # Used for wicked_pdf
 
 group :development, :test do
   gem 'binding_of_caller'
