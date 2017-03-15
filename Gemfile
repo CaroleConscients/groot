@@ -23,6 +23,9 @@ gem "paperclip", "~> 5.0.0"
 gem 'omniauth-twitter'
 # share on social networks
 gem 'social-share-button'
+# delayed jobs for emails
+gem 'sidekiq'
+gem 'sidekiq-failures'
 
 group :development, :test do
   gem 'binding_of_caller'

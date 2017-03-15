@@ -6,19 +6,18 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: [:twitter]
 
   has_one :card
-
   after_create :unlock_a_card
 
   def unlock_a_card
     card = Card.where(turned: false).order("RANDOM()").first
-    reset_turned
+    # reset last_turned card to false
+    reset_last_turned
     unless card.nil?
-      card.turned = true
-      card.last_turned = true
-      card.tree_id = User.count
-      card.user = self
-      card.save
-      UserMailer.certificate(self).deliver_now
+      card.update(turned: true, last_turned: true, tree_id: User.count, user: self)
+      self.update(congratulation: true)
+      # REMOVE NEXT LINE BEFORE PRODUCTION!
+      self.update(admin: true)
+      UserMailer.certificate(self.id).deliver_later(wait: 5.seconds)
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
     end
@@ -41,7 +40,9 @@ class User < ApplicationRecord
     return user
   end
 
-  def reset_turned
+  private 
+
+  def reset_last_turned
     last_turned_card = Card.where(last_turned: true)
     unless last_turned_card.nil?
       last_turned_card.update(last_turned: false)
