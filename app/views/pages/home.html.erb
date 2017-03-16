@@ -1,9 +1,19 @@
-  <div class="row">
-    <div class="col-xs-12 col-lg-2">
-      <h1>Description</h1>
+  <!-- <div class="row"> row mettait un padding de -15 par defaut-->
+<!-- test avec homegrid pour ecran desktop avec width de la grid a 725px     -->
+    <!-- <div class="col-xs-12 col-lg-2 homegrid-desktop-side"> -->
+    <!-- <div class="col-xs-12 col-lg-4 homegrid-desktop-side"> -->
+    <div class="col-xs-12 homegrid-desktop-side">
+      <h1>PROJET</h1>
+      <h2>Project title</h2>
+      <p>
+        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+      </p>
+        <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
     </div>
 
-    <div class="col-xs-12 col-lg-8">
+<!-- test avec homegrid pour ecran desktop avec width de la grid a 725px     -->
+    <!-- <div class="col-xs-12 col-lg-8 homegrid-desktop-center"> -->
+      <div class="col-xs-12 col-lg-5">
       <div class="grid">
         <% @cards.each do |card|%>
           <% if card.turned %>
@@ -15,10 +25,21 @@
       </div>
     </div>
 
-    <div class="col-xs-12 col-lg-2">
-      <h1>Widget</h1>
+<!-- test avec homegrid pour ecran desktop avec width de la grid a 725px     -->
+    <!-- <div class="col-xs-12 col-lg-2 homegrid-desktop-side"> -->
+    <!-- <div class="col-xs-12 col-lg-3 homegrid-desktop-side"> -->
+    <div class="col-xs-12 homegrid-desktop-side timeline-background">
+      <h3>#JeSappelleGroot</h3>
+        <p>Découvrez une image exclusive des gardiens de la galaxie vol 2... quand tous les groots seront plantés</p>
+        <a class="twitter-timeline"
+        href="https://twitter.com/hashtag/jesappellegroot"
+        data-height="600px"
+        data-chrome="noheader, nofooter, noborders, transparent, noscrollbar"
+        data-link-color="#c6882f"
+        data-border-color="#00001f"
+        data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
     </div>
-  </div>
+  <!-- </div> fin de row -->
 
   <!-- Modal connect with twitter -->
   <%= render "devise/registrations/new" %>
@@ -27,5 +48,9 @@
   <% if user_signed_in? && current_user.congratulation %>
     <%= render "pages/congratulation" %>
   <% end %>
-  
+
+
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
 

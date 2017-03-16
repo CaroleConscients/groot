@@ -1,15 +1,15 @@
-<div class="modal fade" id="congratulation" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div class="modal fade groot-modal" id="congratulation" tabindex="-1" role="dialog">
+  <div class="modal-dialog groot-modal-dialog" role="document">
+    <div class="modal-content groot-modal-content">
+      <div class="modal-header groot-modal-header">
+        <button type="button" class="close groot-modal-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Félicitations</h4>
       </div>
       <div class="modal-body">
         <p>Vous avez planté Groot <%= current_user.card.tree_id %>!</p>
         <%= social_share_button_tag %>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer groot-modal-footer">
       </div>
     </div>
   </div>

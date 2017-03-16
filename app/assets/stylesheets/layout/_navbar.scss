@@ -1,13 +1,13 @@
 /* Main class */
 .navbar-groot {
-  // background-color: #00001e;
+  font-family: "Cinzel", "serif";
   background-color: $darkblueone;
   padding: 0px 20px;
   // border-bottom: 1px solid #beab6f;
   transition: all 0.3s ease;
   display: flex;
-  // height: 45px;
   height: 60px;
+  // height: 4em;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -16,6 +16,12 @@
   z-index: 1;
   width: 100%;
 }
+
+// To add share on fb and twitter mais pbm de padding right
+// .navbar-right {
+//     display: flex;
+//     justify-content: space-around;
+// }
 
 .navbar-text-small {
   font-size: 8px;
@@ -34,13 +40,6 @@
   // box-shadow: #294760 -1px 0px 1px 0px;
   // box on dr strange : box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.9);
 
-}
-
-/* Navbar right section (with form, links, button) */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .navbar-groot-btn-plant {
