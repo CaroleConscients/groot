@@ -9,12 +9,6 @@ class PagesController < ApplicationController
   # The navbar is escaped in that view cf:layout
   def certificate
     @user = User.find(params[:id])
-    respond_to do |format|
-      format.html
-      format.pdf do
-        render pdf: "certificate" # Excluding ".pdf" extension.
-      end
-    end
   end
 
   # Required by twitter
