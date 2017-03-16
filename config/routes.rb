@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   # Certificate in html to convert to pdf
-  get 'certificate', to: 'pages#certificate'
+  get 'certificate/user/:id', to: 'pages#certificate'
 
   # Required by twitter api 
   get 'privacy', to: 'pages#privacy'
