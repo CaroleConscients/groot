@@ -9,6 +9,16 @@ Rails.application.routes.draw do
   devise_for :users,
   controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
+  # Homepage
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Certificate in html to convert to pdf
+  get 'certificate/user/:id', to: 'pages#certificate'
+  # Download pdf link
+  get :download_certificate, to: 'pages#download_certificate'
+
+  # Required by twitter api 
+  get 'privacy', to: 'pages#privacy'
+  get 'terms', to: 'pages#terms'
+  
 end

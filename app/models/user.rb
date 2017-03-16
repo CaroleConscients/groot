@@ -17,7 +17,7 @@ class User < ApplicationRecord
       self.update(congratulation: true)
       # REMOVE NEXT LINE BEFORE PRODUCTION!
       self.update(admin: true)
-      UserMailer.certificate(self.id).deliver_later(wait: 5.seconds)
+      UserMailer.certificate(self.id).deliver_later(wait: 2.seconds)
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
     end
