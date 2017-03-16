@@ -9,7 +9,7 @@ class UserMailer < ApplicationMailer
     @user.update(congratulation: false)
 
     # Pdf from url
-    pdf = WickedPdf.new.pdf_from_url("http://localhost:3000/certificate/user/#{user_id}")
+    pdf = WickedPdf.new.pdf_from_url("#{ENV["PDF_URL"]}#{user_id}")
     mail.attachments['certificate.pdf'] = pdf
 
     # Attach parcel.klm

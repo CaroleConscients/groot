@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   # Certificate in html to convert to pdf
   get 'certificate/user/:id', to: 'pages#certificate'
+  # Download pdf link
+  get :download_certificate, to: 'pages#download_certificate'
 
   # Required by twitter api 
   get 'privacy', to: 'pages#privacy'

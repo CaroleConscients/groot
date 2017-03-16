@@ -9,13 +9,12 @@ class PagesController < ApplicationController
   # The navbar is escaped in that view cf:layout
   def certificate
     @user = User.find(params[:id])
-    # @tree_id = @user.card.tree_id
-    # respond_to do |format|
-    #   format.html
-    #   format.pdf do
-    #     render pdf: "certificate_#{@tree_id}" # Excluding ".pdf" extension.
-    #   end
-    # end
+  end
+
+  def download_certificate
+    @user = current_user
+    pdf = WickedPdf.new.pdf_from_url("#{ENV["PDF_URL"]}#{@user.id}")
+    send_data pdf, filename: "certificate_#{@user.card.tree_id}.pdf", type: "application/pdf", disposition: "attachment"
   end
 
   # Required by twitter
