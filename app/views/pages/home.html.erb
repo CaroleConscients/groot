@@ -1,7 +1,7 @@
 <!-- POUR ORDI ET TABLETTE PAYSAGE PROJET EN PREMIER -->
-<!-- PROJET /ordi et tablette paysage -->
+<!--   PROJET /ordi et tablette paysage -->
     <div class="layout-lg visible-md visible-lg">
-      <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4 project-font">
         <h1>PROJET</h1>
         <h2>Project title</h2>
         <p>
@@ -10,7 +10,7 @@
           <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
       </div>
 
-<!-- GRID /ordi et tablette paysage -->
+<!--   GRID /ordi et tablette paysage -->
       <div class="col-xs-12 col-md-5">
         <div class="grid">
           <% @cards.each do |card|%>
@@ -24,7 +24,6 @@
               <div class="card grid-cache-bordered" id="<%= card.id %>">
                 <%= image_tag "grid_color_1.jpg" %>
               </div>
-
             <% end %>
           <% end %>
         </div>
@@ -32,7 +31,7 @@
     </div>
 
 <!-- POUR SMARTPHONE ET TABLETTE PORTRAIT GRID EN PREMIER -->
-<!-- GRID /smartphone et tablette portrait -->
+<!--   GRID /smartphone et tablette portrait -->
       <div class="layout-xs hidden-md hidden-lg">
         <div class="col-xs-12 col-md-5">
           <div class="grid">
@@ -51,7 +50,7 @@
             <% end %>
           </div>
         </div>
-<!-- PROJET /smartphone et tablette portrait     -->
+<!--   PROJET /smartphone et tablette portrait     -->
         <div class="col-xs-12 col-lg-4">
           <h1>PROJET</h1>
           <h2>Project title</h2>
