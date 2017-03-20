@@ -4,26 +4,20 @@
  * ------------------------------------- */
 
 .timeline-background {
-  background-color: $darkbluetwo;
-  // border: 1px solid $brown1oo4;
-  box-shadow: $brown1oo4 0px 0px 3px 0px;
+  // background-color: $darkbluetwo;
+  // box-shadow: $brown1oo4 0px 0px 3px 0px;
 }
 
 .grid {
-  // width: 725px; IMAGE DRSTRANGE FORMAT PLUS GOUTTIERES
-  //width: 490px;
   width: 100%;
-  // background pour voir la taille du content avec Karine depassement a droite
-  background-color: $red1oo2;
   display: flex;
   flex-wrap: wrap;
   }
 
 .card {
-  // height: 28px; SIZE POUR DRSTRANGE FORMAT
-  // height: 19px;
-  // width: 29px; SIZE POUR DRSTRANGE FORMAT
-  width: 4%;
+//width a 2.5 pour 4O img par ligne sur une grid de 100%
+  line-height: 0;
+  width: 2.5%;
   // border: 1px solid yellow;
   img {
     width: 100%;
