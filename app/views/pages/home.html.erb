@@ -20,10 +20,11 @@
                 <%= image_tag card.picture %>
               </div>
             <% else %>
-             <!--  <div class="card" id="<%= card.id %>" style="background-color: <%= card.color %>"></div> -->
-                <div class="card" id="<%= card.id %>">
-                  <%= image_tag "grid_color_1.jpg" %>
-                </div>
+             <!-- <div class="card" id="<%= card.id %>" style="background-color: <%= card.color %>"></div> -->
+              <div class="card grid-cache-bordered" id="<%= card.id %>">
+                <%= image_tag "grid_color_1.jpg" %>
+              </div>
+
             <% end %>
           <% end %>
         </div>
