@@ -66,7 +66,7 @@
   transition: box-shadow 0.4s ease-in-out;
 }
 // quand on appuie
-.navbar-groot-btn-plant:active{
+.navbar-groot-btn-plant:focus{
   color: white;
   text-decoration: none;
   box-shadow: #294760 0px 1px 2px 1px;
