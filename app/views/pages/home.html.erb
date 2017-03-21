@@ -5,7 +5,7 @@
     <% @cards.each do |card|%>
       <% if card.turned %>
         <div class="card" id="<%= card.id %>">
-          <%= image_tag card.picture_link %>
+          <%= image_tag("/assets/images/final_groot/#{card.picture_link}") %>
         </div>
       <% else %>
         <div class="card grid-cache-bordered" id="<%= card.id %>">
