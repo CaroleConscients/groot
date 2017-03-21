@@ -17,9 +17,6 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
-# attach image to cards
-gem "paperclip", "~> 5.0.0"
-# connect with twitter
 gem 'omniauth-twitter'
 # share on social networks
 gem 'social-share-button'
