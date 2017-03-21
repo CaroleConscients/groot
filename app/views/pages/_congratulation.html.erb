@@ -3,13 +3,14 @@
     <div class="modal-content groot-modal-content">
       <div class="modal-header groot-modal-header">
         <button type="button" class="close groot-modal-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Félicitations</h4>
+        <h4 class="modal-title">Vous avez planté Groot <%= current_user.card.tree_id %></h4>
       </div>
       <div class="modal-body">
-        <p>Vous avez planté Groot <%= current_user.card.tree_id %>!</p>
+        <p>Un email vous a été envoyé avec votre certificat de plantation personnel et le fichier de géolocalisation de la forêt Groot.</p>
       </div>
       <div class="modal-footer groot-modal-footer">
         <h4>Invitez vos amis à régénérer les groots</h4>
+        <h6>#JeSappelleGroot</h6>
         <%= social_share_button_tag %>
       </div>
     </div>
