@@ -4,7 +4,9 @@
   <div class="grid">
     <% @cards.each do |card|%>
       <% if card.turned %>
-        <div class="card" id="<%= card.id %>" style="background-image: url('<%= image_path(card.picture) %>')"></div>
+        <div class="card" id="<%= card.id %>">
+          <%= image_tag card.picture %>
+        </div>
       <% else %>
         <div class="card grid-cache-bordered" id="<%= card.id %>">
           <%= image_tag "#{@grid_colors.sample}" %>
