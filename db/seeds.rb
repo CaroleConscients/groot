@@ -9,7 +9,7 @@ for i in 1..4
   backgrounds << background
 end
 
-for i in 1..2
+for i in 1..2000
   picture = File.open(File.join(Rails.root,"app/assets/images/final_groot/_#{i}.jpg"))
   background = backgrounds.sample
   Card.create(color: background, picture: picture, turned: false)
