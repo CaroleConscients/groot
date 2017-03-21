@@ -5,6 +5,6 @@ Card.destroy_all
 
 for i in 1..2000
   # picture = File.open(File.join(Rails.root,"app/assets/images/final_groot/_#{i}.jpg"))
-  Card.create(picture_link: "#_{i}.jpg", turned: false)
+  Card.create(picture_link: "_#{i}.jpg", turned: false)
   puts "image #{i} created"
 end
