@@ -1,0 +1,33 @@
+.dark-blue-btn {
+  font-family: "Cinzel", "serif";
+  // display: flex;
+  // align-items: center;
+  // height: 60%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: $darkbluethree;
+  border-radius: 0.5em;
+  box-shadow: $brown1oo4 1px 1px 10px;
+  color: #f1f7f9;
+  text-shadow: 0px 3px black;
+  // font-size: 1.3rem;
+  letter-spacing: 2px;
+  // @media (max-width: $screen-xs) {
+  //   background-color: white;
+  // }
+}
+
+.dark-blue-btn:hover, .navbar-round-btn:hover{
+  color: white;
+  background-color: #121c4a;
+  box-shadow: #f8a227 1px 1px 20px;
+  text-decoration: none;
+  transform: scale(0.98);
+  transition: box-shadow 0.4s ease-in-out;
+}
+// to change focus fromnavigator after clic on button
+.dark-blue-btn:focus{
+  color: white;
+  text-decoration: none;
+  box-shadow: #294760 0px 1px 2px 1px;
+}
