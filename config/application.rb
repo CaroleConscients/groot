@@ -25,8 +25,9 @@ module Groot
     # Use sidekiq for active job
     config.active_job.queue_adapter = :sidekiq
     # Load nested directory for assets/images
-    config.assets.paths << Rails.root.join("app/assets/images/final_groot")
-
+    Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
+      config.assets.paths << path
+    end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
