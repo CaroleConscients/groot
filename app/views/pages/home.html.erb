@@ -9,7 +9,7 @@
         </div>
       <% else %>
         <div class="card grid-cache-bordered" id="<%= card.id %>">
-          <%= image_tag card.color %>
+          <%= image_tag "#{@grid_colors.sample}" %>
         </div>
       <% end %>
     <% end %>
