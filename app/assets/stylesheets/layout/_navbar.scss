@@ -54,7 +54,10 @@
   color: #f1f7f9;
   text-shadow: 0px 3px black;
   font-size: 1.3rem;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  // @media (max-width: $screen-xs) {
+  //   background-color: white;
+  // }
 }
 
 .navbar-groot-btn-plant:hover, .navbar-round-btn:hover{
@@ -65,8 +68,8 @@
   transform: scale(0.98);
   transition: box-shadow 0.4s ease-in-out;
 }
-// quand on appuie
-.navbar-groot-btn-plant:active{
+// to change focus fromnavigator after clic on button
+.navbar-groot-btn-plant:focus{
   color: white;
   text-decoration: none;
   box-shadow: #294760 0px 1px 2px 1px;

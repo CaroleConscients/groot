@@ -1,50 +1,95 @@
-  <!-- <div class="row"> row mettait un padding de -15 par defaut-->
-<!-- test avec homegrid pour ecran desktop avec width de la grid a 725px     -->
-    <!-- <div class="col-xs-12 col-lg-2 homegrid-desktop-side"> -->
-    <!-- <div class="col-xs-12 col-lg-4 homegrid-desktop-side"> -->
-    <div class="col-xs-12 homegrid-desktop-side">
-      <h1>PROJET</h1>
-      <h2>Project title</h2>
-      <p>
-        Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-      </p>
-        <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
-    </div>
+<!-- POUR ORDI ET TABLETTE PAYSAGE PROJET EN PREMIER -->
+<!--   PROJET /ordi et tablette paysage -->
+    <div class="layout-lg visible-md visible-lg">
+      <div class="col-xs-12 col-md-4 project-font">
+        <h1>PROJET</h1>
+        <h2>Project title</h2>
+        <p>
+          Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+        </p>
+          <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
+      </div>
 
-<!-- test avec homegrid pour ecran desktop avec width de la grid a 725px     -->
-    <!-- <div class="col-xs-12 col-lg-8 homegrid-desktop-center"> -->
-      <div class="col-xs-12 col-lg-5">
-      <div class="grid">
-        <% @cards.each do |card|%>
-          <% if card.turned %>
-            <div class="card" id="<%= card.id %>" style="background-image: url('<%= image_path(card.picture) %>')"></div>
-          <% else %>
-            <div class="card" id="<%= card.id %>" style="background-color: <%= card.color %>"></div>
+<!--   GRID /ordi et tablette paysage -->
+      <div class="col-xs-12 col-md-5">
+        <div class="grid">
+          <% @cards.each do |card|%>
+            <% if card.turned %>
+              <!-- <div class="card" id="<%= card.id %>" style="background-image: url('<%= image_path(card.picture) %>')"></div> -->
+              <div class="card" id="<%= card.id %>">
+                <%= image_tag card.picture %>
+              </div>
+            <% else %>
+             <!-- <div class="card" id="<%= card.id %>" style="background-color: <%= card.color %>"></div> -->
+              <div class="card grid-cache-bordered" id="<%= card.id %>">
+                <%= image_tag "grid_color_1.jpg" %>
+              </div>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
     </div>
 
-<!-- test avec homegrid pour ecran desktop avec width de la grid a 725px     -->
-    <!-- <div class="col-xs-12 col-lg-2 homegrid-desktop-side"> -->
-    <!-- <div class="col-xs-12 col-lg-3 homegrid-desktop-side"> -->
-    <div class="col-xs-12 homegrid-desktop-side timeline-background">
-      <h3>#JeSappelleGroot</h3>
-        <p>Découvrez une image exclusive des gardiens de la galaxie vol 2... quand tous les groots seront plantés</p>
+<!-- POUR SMARTPHONE ET TABLETTE PORTRAIT GRID EN PREMIER -->
+<!--   GRID /smartphone et tablette portrait -->
+      <div class="layout-xs hidden-md hidden-lg">
+        <div class="col-xs-12 col-md-5">
+          <div class="grid">
+            <% @cards.each do |card|%>
+              <% if card.turned %>
+                <!-- <div class="card" id="<%= card.id %>" style="background-image: url('<%= image_path(card.picture) %>')"></div> -->
+                <div class="card" id="<%= card.id %>">
+                  <%= image_tag card.picture %>
+                </div>
+              <% else %>
+                <div class="card" id="<%= card.id %>">
+                  <%= image_tag "grid_color_1.jpg" %>
+                </div>
+               <!--  <div class="card" id="<%= card.id %>" style="background-color: <%= card.color %>"></div> -->
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+<!--   PROJET /smartphone et tablette portrait     -->
+        <div class="col-xs-12 col-lg-4">
+          <h1>PROJET</h1>
+          <h2>Project title</h2>
+          <p>
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+          </p>
+            <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
+        </div>
+      </div>
+
+<!-- TIMELINE UNIQUEMENT VISIBLE SUR DESKTOP ET TABLETTE HORIZONTAL -->
+    <div class="col-md-3 visible-lg timeline-background">
         <a class="twitter-timeline"
         href="https://twitter.com/hashtag/jesappellegroot"
+        data-theme="light"
         data-height="600px"
-        data-chrome="noheader, nofooter, noborders, transparent, noscrollbar"
+        data-chrome="noheader, nofooter, noborders, noscrollbar"
         data-link-color="#c6882f"
         data-border-color="#00001f"
         data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
     </div>
-  <!-- </div> fin de row -->
 
-  <!-- Modal connect with twitter -->
+    <div class="col-md-3 visible-md timeline-background">
+        <a class="twitter-timeline"
+        href="https://twitter.com/hashtag/jesappellegroot"
+        data-theme="light"
+        data-height="400px"
+        data-chrome="noheader, nofooter, noborders, noscrollbar"
+        data-link-color="#c6882f"
+        data-border-color="#00001f"
+        data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
+    </div>
+
+
+
+<!-- Modal connect with twitter -->
   <%= render "devise/registrations/new" %>
 
-  <!-- Congratulation card  -->
+<!-- Congratulation card  -->
   <% if user_signed_in? && current_user.congratulation %>
     <%= render "pages/congratulation" %>
   <% end %>

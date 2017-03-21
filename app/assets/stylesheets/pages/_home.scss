@@ -1,79 +1,84 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
 
 .timeline-background {
-  background-color: $darkbluetwo;
-  // border: 1px solid $brown1oo4;
-  box-shadow: $brown1oo4 0px 0px 3px 0px;
+  // background-color: $darkbluetwo;
+  // box-shadow: $brown1oo4 0px 0px 3px 0px;
 }
 
-.grid {
-  // width: 725px; IMAGE DRSTRANGE FORMAT PLUS GOUTTIERES
-  width: 490px;
-  // background pour voir la taille du content avec Karine depassement a droite
-  background-color: $red1oo2;
-  display: flex;
-  flex-wrap: wrap;
+.grid-cache-bordered {
+  border: 1px solid #36345b;
+}
+
+// FORMAT GRID ET CARDS
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+  .card {
+    line-height: 0;
+    width: 2.5%;
+    img {
+      width: 100%;
+    }
   }
 
-.card {
-  // height: 28px; SIZE POUR DRSTRANGE FORMAT
-  height: 19px;
-  // width: 29px; SIZE POUR DRSTRANGE FORMAT
-  width: 19px
-  // border: 1px solid yellow;
-}
+// BOUTON GROOT DANS PROJET HOME
+  .home-groot-btn-plant {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: $darkbluethree;
+    border-radius: 0.5em;
+    box-shadow: $brown1oo4 1px 1px 10px;
+    font-family: "Cinzel", "serif";
+    color: #f1f7f9;
+    text-shadow: 0px 3px black;
+    font-size: 1.3rem;
+    letter-spacing: 2px
+  }
+  .home-groot-btn-plant:hover {
+    color: white;
+    background-color: #121c4a;
+    box-shadow: #f8a227 1px 1px 20px;
+    text-decoration: none;
+    transform: scale(0.98);
+    transition: box-shadow 0.4s ease-in-out;
+  }
 
-.home-groot-btn-plant {
-  display: flex;
-  align-items: center;
-  height: 60%;
-  padding: 10px;
-  cursor: pointer;
-  background-color: $darkbluethree;
-  border-radius: 0.5em;
-  box-shadow: $brown1oo4 1px 1px 10px;
-  font-family: "Cinzel", "serif";
-  color: #f1f7f9;
-  text-shadow: 0px 3px black;
-  font-size: 1.3rem;
-  letter-spacing: 2px
-}
+// FONT POUR PROJET
+  .project-font {
+    h3 {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    color: $brown1oo4;
+    }
 
-.home-groot-btn-plant:hover {
-  color: white;
-  background-color: #121c4a;
-  box-shadow: #f8a227 1px 1px 20px;
-  text-decoration: none;
-  transform: scale(0.98);
-  transition: box-shadow 0.4s ease-in-out;
-}
+    h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
 
-h3 {
-font-family: "PT Sans", sans-serif;
-font-size: 20px;
-color: $brown1oo4;
-}
+    h2 {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
 
-h1 {
-  font-size: 30px;
-  letter-spacing: 2px;
-}
+    p {
+      font-family: "PT Sans", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      // color: #f1f7f9;
+      font-weight: lighter;
+      letter-spacing: 0.05em;
+      /* Tablette paysage et Desktop MD ET LG*/
+        @media (min-width: $screen-md-min) {
+          color: red;
+        }
+    }
+  }
 
-h2 {
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-p {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 150%;
-  color: #f1f7f9;
-  font-weight: lighter;
-  letter-spacing: 0.05em;
-}
 
 
