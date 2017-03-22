@@ -1,6 +1,7 @@
-<div class="certificate" style="background-image: url('<%= image_path('certificate.jpg') %>');">
-  <h2><%= @user.name.nil? ? @user.nickname : @user.name %></h2>
-  <h2><%= @user.card.tree_id %></h2>
+<div class="certificate">
+  <%= image_tag "certificate.jpg" %>
+  <h2 id="name"><%= @user.name.nil? ? @user.nickname : @user.name %></h2>
+  <h2 id="tree_id"><%= @user.card.tree_id %></h2>
 </div>
 
 
@@ -13,10 +14,24 @@
   }
   h2 {
     color: black;
+
   }
   .certificate {
-    height: 1240px;
-    width: 1754px;
+    height: 100%;
+    width: 100%;
     background-size: cover
+    position: relative;
+    position: fixed;
+  }
+  #name {
+    position: absolute;
+    top: 75%;
+    left: 18%;
+  }
+  #tree_id {
+    position: absolute;
+    top: 21.3%;
+    left: 40%;
+    font-size: 1em;
   }
 </style>
