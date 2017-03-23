@@ -1,5 +1,7 @@
 <!-- Mobile first donc Grid en 1 puis Description -->
 <!-- Grid -->
+<div class="row-cache">
+
 <div class="col-xs-13 col-md-5 col-md-push-4">
   <div class="grid">
     <% @cards.each do |card|%>
@@ -38,6 +40,7 @@
     data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
 </div>
 
+</div>
 <!-- Modal connect with twitter -->
   <%= render "devise/registrations/new" %>
 

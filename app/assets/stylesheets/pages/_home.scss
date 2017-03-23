@@ -1,11 +1,21 @@
 
+.row-cache {
+   overflow: hidden;
+}
+
 .timeline-style {
   // background-color: $darkbluetwo;
   box-shadow: $brown1oo4 0px 0px 3px 0px inset;
+  background-color: #1D1D3A;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
+
 
 .project-style {
   box-shadow: $brown1oo4 0px 0px 3px 0px inset;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
 // FONT POUR PROJET
