@@ -15,6 +15,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
 
   def failure
+    # We can put a flash message here for user that refuses twitter connect
     redirect_to root_path
   end
 end
