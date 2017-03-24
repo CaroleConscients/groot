@@ -12,6 +12,9 @@
 }
 
 
+.inner {
+  padding: 0 5% 0 5%;
+}
 .project-style {
   box-shadow: $brown1oo4 0px 0px 3px 0px inset;
   margin-bottom: -99999px;
@@ -25,7 +28,9 @@
     // font-size: 20px;
     // color: $brown1oo4;
     // }
-  color: #ddc7d0;
+  // color: #ddc7d0; light purple
+    color: #f5f8fa; //text blanc idem twitter
+    // color: #babdc5; text grid idem twitter
     h1 {
       font-size: 30px;
       letter-spacing: 2px;
@@ -37,8 +42,9 @@
     }
 
     p {
-      font-family: "PT Sans", sans-serif;
-      font-size: 14px;
+      // font-family: "PT Sans", sans-serif;
+      font-family: "Helvetica";
+      font-size: 12px;
       line-height: 150%;
       // color: #f1f7f9;
       font-weight: lighter;
