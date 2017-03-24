@@ -20,7 +20,7 @@ class User < ApplicationRecord
       self.update(congratulation: true)
       # REMOVE NEXT LINE BEFORE PRODUCTION!
       self.update(admin: true)
-      UserMailer.certificate(self.id).deliver_later(wait: 2.seconds)
+      UserMailer.email_certificate(self.id).deliver_later(wait: 2.seconds)
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
     end
@@ -43,7 +43,7 @@ class User < ApplicationRecord
     return user
   end
 
-  private 
+  private
 
   def reset_last_turned
     last_turned_card = Card.where(last_turned: true)

@@ -17,8 +17,11 @@ Rails.application.routes.draw do
   # Download pdf link
   get :download_certificate, to: 'pages#download_certificate'
 
-  # Required by twitter api 
+  # Required by twitter api
   get 'privacy', to: 'pages#privacy'
   get 'terms', to: 'pages#terms'
-  
+
+  # Page with forest map
+  get 'foret-groot', to: 'pages#forest'
+
 end

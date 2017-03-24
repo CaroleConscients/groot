@@ -14,14 +14,14 @@ $base-font: 'PT Sans', sans-serif;
 
 
 // Local fonts (uncomment following lines)
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+  font-family: "Helvetica";
+  src: font-url('Helvetica/_Helvetica-Neue-Roman.eot');
+  src: font-url('Helvetica/_Helvetica-Neue-Roman.eot?#iefix') format('embedded-opentype'),
+       font-url('Helvetica/_Helvetica-Neue-Roman.woff') format('woff'),
+       font-url('Helvetica/_Helvetica-Neue-Roman.ttf') format('truetype')
+}
+$my-font: "Helvetica";
 
 // Font-size and line-height
 $header-size: 12px;

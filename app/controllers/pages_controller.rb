@@ -23,8 +23,12 @@ class PagesController < ApplicationController
   # Required by twitter
   def privacy
   end
-  
+
   def terms
+  end
+
+  # Forest map
+  def forest
   end
 
 end

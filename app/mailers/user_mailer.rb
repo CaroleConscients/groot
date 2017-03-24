@@ -1,7 +1,7 @@
 class UserMailer < ApplicationMailer
 
   # Sending email to User with his certificate and klm
-  def certificate(user_id)
+  def email_certificate(user_id)
     @user = User.find(user_id)
     @tree_id = @user.card.tree_id
 
@@ -14,8 +14,8 @@ class UserMailer < ApplicationMailer
 
     # Attach parcel.klm
     mail.attachments['parcel.kml'] = File.join("#{Rails.root}/app/assets/images/parcel.klm")
-    
+
     # This will render a view in `app/views/user_mailer`!
-    mail(to: @user.email, subject: "Certificate_#{@tree_id}")
+    mail(to: @user.email, subject: "PLANTEZ UN GROOT – VOTRE CERTIFICAT #{@tree_id}")
   end
 end
