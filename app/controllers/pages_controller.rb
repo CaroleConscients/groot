@@ -3,6 +3,8 @@ class PagesController < ApplicationController
 
   def home
     @cards = Card.order(:id)
+    # Next line is used for full image if 2000 cards are turned
+    # @turned_counter = Card.where(turned: true).count
     @grid_colors = ["grid_color_1.jpg", "grid_color_2.jpg", "grid_color_3.jpg", "grid_color_4.jpg"]
   end
 

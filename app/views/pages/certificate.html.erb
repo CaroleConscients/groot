@@ -1,9 +1,8 @@
-<div class="certificate" style="background-image: url('<%= image_path('certificate.jpg') %>');">
-  <h2><%= @user.name.nil? ? @user.nickname : @user.name %></h2>
-  <h2><%= @user.card.tree_id %></h2>
+<div class="certificate">
+  <%= image_tag "certificate.jpg" %>
+  <h2 id="name"><%= @user.name.nil? ? @user.nickname : @user.name %></h2>
+  <h2 id="tree_id"><%= @user.card.tree_id %></h2>
 </div>
-
-
 
 <!-- Style inline for pdf -->
 <style>
@@ -15,8 +14,19 @@
     color: black;
   }
   .certificate {
-    height: 1240px;
-    width: 1754px;
-    background-size: cover
+    height: 1024px;
+    width: 1558px;
+    position: relative;
+  }
+  #name {
+    position: absolute;
+    top: 635px;
+    left: 133px;
+  }
+  #tree_id {
+    position: absolute;
+    top: 110px;
+    left: 398px;
+    font-size: 18px;
   }
 </style>
