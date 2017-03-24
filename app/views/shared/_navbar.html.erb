@@ -1,6 +1,6 @@
 <div class="navbar-groot">
   <!-- Projet -->
-    <%= link_to "PROJET", root_path, class: "navbar-round-btn navbar-text-small"%>
+    <%= link_to "Découvrir le projet", root_path, class: "navbar-round-btn navbar-text-small"%>
   <!-- plant a groot -->
   <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-groot-btn-plant' %>
 
@@ -17,11 +17,14 @@
           <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
-              <%= link_to "download certificate", download_certificate_path %>
+              <%= link_to "Télécharger le certificat", download_certificate_path %>
+            </li>
+            <li>
+              <%= link_to "Voir la forêt Groot", foret_groot_path %>
             </li>
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
               <% end %>
             </li>
           </ul>
