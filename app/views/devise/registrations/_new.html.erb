@@ -3,7 +3,7 @@
     <div class="modal-content groot-modal-content">
 
       <!-- Texte si tous les groot on été plantés -->
-      <% if @turned_counter == 1 %>
+      <% if @turned_counter == 2000 %>
         <div class="modal-header groot-modal-header">
           <button type="button" class="close groot-modal-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title">TOUS LES GROOT ONT ÉTÉ ADOPTÉS !</h4>
@@ -12,12 +12,9 @@
           </div>
           <div class="modal-footer groot-modal-footer">
             <p>Les arbres sont plantés en Amazonie dans un projet de reforestation visant à régénérer les écosystèmes.</p>
-            <%= link_to "Je plante mon groot avec twitter", user_twitter_omniauth_authorize_path, class: "dark-blue-btn fa fa-twitter" %>
           </div>
-
         </div>
       
-
       <% else %>
       <!-- Texte classique si il reste des groot à planter -->
         <div class="modal-header groot-modal-header">
