@@ -1,6 +1,8 @@
 class UserMailerPreview < ActionMailer::Preview
-  def certificate
+
+  # http://localhost:3000/rails/mailers/user_mailer/email_certificate
+  def email_certificate
     user = User.first
-    UserMailer.certificate(user)
+    UserMailer.email_certificate(user)
   end
 end
