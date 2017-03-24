@@ -5,11 +5,11 @@
 <div class="col-xs-13 col-md-5 col-md-push-4">
   <div class="grid">
   <!-- We can load the frame faster if all cards are turned -->
-    <%# if @turned_counter == 2000 %>
-      <!-- <div class="full-image"> -->
-        <%#= image_tag "guardian.jpg" %>
-      <!-- </div> -->
-    <%# else %>
+    <% if @turned_counter == 2000 %>
+      <div class="full-image">
+        <%= image_tag "guardian.jpg" %>
+      </div>
+    <% else %>
       <% @cards.each do |card|%>
         <% if card.turned %>
           <div class="card" id="<%= card.id %>">
