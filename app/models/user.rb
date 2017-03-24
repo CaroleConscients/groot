@@ -50,12 +50,6 @@ class User < ApplicationRecord
   end
 
   def generate_tree_id
-    users = User.count
-    if users < 10
-      return "000#{users}"
-    elsif users >= 10
-
-    
   end
 end
 
