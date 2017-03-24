@@ -27,22 +27,22 @@
 
 <!-- Description. S'inverse avec la grid à partid de MD et superieur -->
 <div class="col-xs-13 col-md-4 col-md-pull-5 project-font project-style">
-<div class="inner">
-  <h1>Devenez les Gardiens de notre Galaxie !</h1>
-  <p>
-  2 000 « GROOT » vont être plantés en cette Journée Internationale de la Terre, et nous vous donnons l’occasion de parrainer le vôtre. Vous recevrez votre certificat de plantation unique et nominatif ainsi qu’un fichier de géolocalisation de l’emplacement de votre Groot.  Pour cela rien de plus simple, il suffit d’avoir un compte Twitter et de se connecter en suivant ce lien : URL (qui amène vers l’espace PLANTEZ VOTRE GROOT)
-  <br>
-  <br>
-  La totalité des arbres est financé par Marvel Studios dans le cadre de la sortie des Gardiens de la Galaxie Vol.2 au cinéma. Les arbres sont plantés en Amazonie péruvienne, selon le modèle de l'agroforesterie qui consiste à combiner agriculture et plantation d'arbres et qui présente de nombreux bénéfices : érosion, sécheresse et inondation évitées, retour de biodiversité, séquestration carbone dans les arbres et conservation de la forêt.
-  <br>
-  <br>
-  Le projet de l'Alto Huayabamba permet ainsi d'éviter la déforestation, fortement liée à l'agriculture intensive en Amazonie, en proposant un modèle plus pérenne et respectueux de l'écosystème.
-  <br>
-  <br>
-  Participez à cette opération en plantant vous aussi un Groot, et devenez les Gardiens de notre Galaxie !
-  </p>
-    <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
-</div>
+  <div class="inner" id="project">
+    <h1>Devenez les Gardiens de notre Galaxie !</h1>
+    <p>
+    2 000 « GROOT » vont être plantés en cette Journée Internationale de la Terre, et nous vous donnons l’occasion de parrainer le vôtre. Vous recevrez votre certificat de plantation unique et nominatif ainsi qu’un fichier de géolocalisation de l’emplacement de votre Groot.  Pour cela rien de plus simple, il suffit d’avoir un compte Twitter et de se connecter en suivant ce lien : URL (qui amène vers l’espace PLANTEZ VOTRE GROOT)
+    <br>
+    <br>
+    La totalité des arbres est financé par Marvel Studios dans le cadre de la sortie des Gardiens de la Galaxie Vol.2 au cinéma. Les arbres sont plantés en Amazonie péruvienne, selon le modèle de l'agroforesterie qui consiste à combiner agriculture et plantation d'arbres et qui présente de nombreux bénéfices : érosion, sécheresse et inondation évitées, retour de biodiversité, séquestration carbone dans les arbres et conservation de la forêt.
+    <br>
+    <br>
+    Le projet de l'Alto Huayabamba permet ainsi d'éviter la déforestation, fortement liée à l'agriculture intensive en Amazonie, en proposant un modèle plus pérenne et respectueux de l'écosystème.
+    <br>
+    <br>
+    Participez à cette opération en plantant vous aussi un Groot, et devenez les Gardiens de notre Galaxie !
+    </p>
+      <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'home-groot-btn-plant' %>
+  </div>
 </div>
 
 <!-- TIMELINE UNIQUEMENT VISIBLE SUR DESKTOP ET TABLETTE HORIZONTAL -->
