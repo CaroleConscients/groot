@@ -16,6 +16,6 @@ class UserMailer < ApplicationMailer
     mail.attachments['parcel.kml'] = File.join("#{Rails.root}/app/assets/images/parcel.klm")
     
     # This will render a view in `app/views/user_mailer`!
-    mail(to: @user.email, subject: "Certificate_#{@user.card.tree_id}")
+    mail(to: @user.email, subject: "Certificate_#{@tree_id}")
   end
 end

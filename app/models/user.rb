@@ -13,7 +13,10 @@ class User < ApplicationRecord
     # reset last_turned card to false
     reset_last_turned
     unless card.nil?
-      card.update(turned: true, last_turned: true, tree_id: User.count, user: self)
+      user_count = User.count
+      # generate the tree_id with prefix
+      tree_id = generate_tree_id(user_count)
+      card.update(turned: true, last_turned: true, tree_id: tree_id, user: self)
       self.update(congratulation: true)
       # REMOVE NEXT LINE BEFORE PRODUCTION!
       self.update(admin: true)
@@ -46,6 +49,19 @@ class User < ApplicationRecord
     last_turned_card = Card.where(last_turned: true)
     unless last_turned_card.nil?
       last_turned_card.update(last_turned: false)
+    end
+  end
+
+  # generate the tree_id number for certificate
+  def generate_tree_id(count)
+    if count < 10
+      "000#{count}"
+    elsif count >= 10 && count < 100
+      "00#{count}"
+    elsif count >= 100 && count < 1000
+      "0#{count}"
+    else
+      "#{count}" 
     end
   end
 end
