@@ -1,6 +1,8 @@
 <!-- Mobile first donc Grid en 1 puis Description -->
 <!-- Grid -->
-<div class="col-xs-12 col-md-5 col-md-push-4">
+<div class="row-cache">
+
+<div class="col-xs-13 col-md-5 col-md-push-4">
   <div class="grid">
     <% @cards.each do |card|%>
       <% if card.turned %>
@@ -17,7 +19,7 @@
 </div>
 
 <!-- Description. S'inverse avec la grid à partid de MD et superieur -->
-<div class="col-xs-12 col-md-4 col-md-pull-5 project-font">
+<div class="col-xs-13 col-md-4 col-md-pull-5 project-font project-style">
   <h1>PROJET</h1>
   <h2>Project title</h2>
   <p>
@@ -27,17 +29,18 @@
 </div>
 
 <!-- TIMELINE UNIQUEMENT VISIBLE SUR DESKTOP ET TABLETTE HORIZONTAL -->
-<div class="col-md-3 visible-lg visible-md timeline-background">
+<div class="col-md-4 visible-lg visible-md timeline-style">
     <a class="twitter-timeline"
     href="https://twitter.com/hashtag/jesappellegroot"
-    data-theme="light"
+    data-theme="dark"
     data-height="600px"
-    data-chrome="noheader, nofooter, noborders, noscrollbar"
+    data-chrome="transparent, noheader, nofooter, noborders, noscrollbar"
     data-link-color="#c6882f"
     data-border-color="#00001f"
     data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
 </div>
 
+</div>
 <!-- Modal connect with twitter -->
   <%= render "devise/registrations/new" %>
 

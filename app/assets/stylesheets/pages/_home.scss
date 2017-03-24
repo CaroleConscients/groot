@@ -1,8 +1,55 @@
 
-.timeline-background {
-  // background-color: $darkbluetwo;
-  // box-shadow: $brown1oo4 0px 0px 3px 0px;
+.row-cache {
+   overflow: hidden;
 }
+
+.timeline-style {
+  // background-color: $darkbluetwo;
+  box-shadow: $brown1oo4 0px 0px 3px 0px inset;
+  background-color: #1D1D3A;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+
+.project-style {
+  box-shadow: $brown1oo4 0px 0px 3px 0px inset;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+// FONT POUR PROJET
+  .project-font {
+    // h3 {
+    // font-family: "PT Sans", sans-serif;
+    // font-size: 20px;
+    // color: $brown1oo4;
+    // }
+  color: #ddc7d0;
+    h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-family: "PT Sans", sans-serif;
+      font-size: 14px;
+      line-height: 150%;
+      // color: #f1f7f9;
+      font-weight: lighter;
+      letter-spacing: 0.05em;
+      text-align: justify;
+      /* Tablette paysage et Desktop MD ET LG*/
+        // @media (min-width: $screen-md-min) {
+        //   color: color;
+        // }
+    }
+  }
 
 .grid-cache-bordered {
   border: 1px solid #36345b;
@@ -47,38 +94,4 @@
     transform: scale(0.98);
     transition: box-shadow 0.4s ease-in-out;
   }
-
-// FONT POUR PROJET
-  .project-font {
-    h3 {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    color: $brown1oo4;
-    }
-
-    h1 {
-      font-size: 30px;
-      letter-spacing: 2px;
-    }
-
-    h2 {
-      font-size: 20px;
-      letter-spacing: 2px;
-    }
-
-    p {
-      font-family: "PT Sans", sans-serif;
-      font-size: 14px;
-      line-height: 150%;
-      // color: #f1f7f9;
-      font-weight: lighter;
-      letter-spacing: 0.05em;
-      /* Tablette paysage et Desktop MD ET LG*/
-        @media (min-width: $screen-md-min) {
-          color: red;
-        }
-    }
-  }
-
-
 
