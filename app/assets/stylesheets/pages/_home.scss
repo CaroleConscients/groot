@@ -1,24 +1,25 @@
-.row-cache {
+.fixed-container {
    overflow: hidden;
 }
 
 .timeline-style {
-  // background-color: $darkbluetwo;
-  box-shadow: $brown1oo4 0px 0px 3px 0px inset;
-  background-color: #1D1D3A;
+  background-color: white;
+  border-left: 2px solid $darkblueone;
   margin-bottom: -99999px;
-  padding-bottom: 99999px;
+  padding: 0px 0px 99999px 0px;
 }
 
 .inner {
-  padding: 0 5% 0 5%;
+  padding: 5% 9% 5% 9%;
 }
 .project-style {
-  box-shadow: $brown1oo4 0px 0px 3px 0px inset;
   margin-bottom: -99999px;
-  padding-bottom: 99999px;
+  padding: 0px 0px 99999px 0px;
 }
 
+.grid-col-style {
+  padding: 0px 0px;
+}
 // FONT POUR PROJET
   .project-font {
     // h3 {
@@ -34,6 +35,7 @@
     h1 {
       font-size: 25px;
       letter-spacing: 2px;
+      margin-bottom: 9%;
     }
 
     h2 {
@@ -66,7 +68,7 @@
   }
 
 .grid-cache-bordered {
-  border: 1px solid #36345b;
+  border: 1px solid #382c6b;
 }
 
 // FORMAT GRID ET CARDS

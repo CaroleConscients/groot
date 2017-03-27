@@ -1,8 +1,8 @@
 <!-- Mobile first donc Grid en 1 puis Description -->
 <!-- Grid -->
-<div class="row-cache">
+<div class="fixed-container">
 
-<div class="col-xs-13 col-md-5 col-md-push-4">
+<div class="col-xs-13 col-md-5 col-md-push-4 grid-col-style">
   <div class="grid">
   <!-- We can load the frame faster if all cards are turned -->
     <% if @turned_counter == 2000 %>
@@ -49,10 +49,10 @@
 <div class="col-md-4 visible-lg visible-md timeline-style">
     <a class="twitter-timeline"
     href="https://twitter.com/hashtag/jesappellegroot"
-    data-theme="dark"
+    data-theme="light"
     data-height="600px"
-    data-chrome="transparent, noheader, nofooter, noborders, noscrollbar"
-    data-link-color="#c6882f"
+    data-chrome="noheaders, nofooter, noborders, noscrollbar"
+    data-link-color="#372354"
     data-border-color="#00001f"
     data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
 </div>
