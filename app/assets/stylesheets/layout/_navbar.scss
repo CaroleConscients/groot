@@ -4,12 +4,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 55px;
   font-family: "Cinzel", "serif";
   // background-color: rgb(22, 18, 62);
   background-color: #24123f;
   // background-color: #2e184f;
-  padding: 0px 20px;
+  // padding: 0px 20px;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -22,6 +22,9 @@
   align-items: center;
   justify-content: flex-start;
   font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .navbar-center {
@@ -36,33 +39,40 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 0px;
 }
 
-/* Navbar item */
 .navbar-item {
   flex: 0 1 auto;
   cursor: pointer;
-  padding: 0 20px;
-  color: white;
+  padding: 0 10px;
+  color: $text-purple;
   text-shadow: 2px 0px black;
+}
+
+.navbar-item:hover, :focus {
+  color: $text-purple-lighter;
+  text-decoration: none;
+  transform: scale(0.98);
+  transition: color 0.4s ease-in-out;
 }
 
 .navbar-btn-plant {
   flex: 0 1 auto;
   cursor: pointer;
-  padding: 7px 10px;
+  padding: 6px 10px;
   margin: auto;
   // background-color: #372354;
   border-radius: 0.5em;
   box-shadow: #F9A23B 1px 1px 10px;
-  color: #f1f7f9;
+  color: $text-purple;
   text-shadow: 0px 3px black;
-  font-size: 1.3rem;
+  font-size: 14px;
   letter-spacing: 2px;
 }
 
 .navbar-btn-plant:hover {
-  color: white;
+  color: $text-purple-lighter;
   // background-color: #372354;
   background-color: #1c0b35;
   // box-shadow: #FAB360 1px 1px 20px;
