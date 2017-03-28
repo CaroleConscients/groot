@@ -1,8 +1,8 @@
   <div class="navbar-groot">
     <!-- Left -->
     <div class="navbar-left">
-      <%= link_to "Découvrir le projet", '#project', class: "navbar-item"%>
-      <%= link_to "Voir la forêt Groot", foret_groot_path, class: "navbar-item" %>
+      <%= link_to "Découvrir le projet", '#project', class: "navbar-item navbar-item-box"%>
+      <%#= link_to "Voir la forêt Groot", foret_groot_path, class: "navbar-item navbar-item-box" %>
       <!-- Center -->
     </div>
     <div class="navbar-center">
@@ -35,14 +35,19 @@
 
       <% else %>
 
-        <!-- Login text link -->
-        <!-- // To add share on fb and twitter -->
-        <!-- <div class="navbar-right"> -->
-          <%= link_to "", root_path, class: "navbar-item fa fa-facebook"%>
-          <%= link_to "", root_path, class: "navbar-item fa fa-twitter"%>
+      <div class="navbar-item-box">
+        <p class="navbar-small-text">Partager :</p>
+        <%= link_to "", root_path, class: "navbar-item fa fa-facebook fb"%>
+        <%= link_to "", root_path, class: "navbar-item fa fa-twitter tw"%>
+      </div>
+      <div class="class navbar-item navbar-item-box">
           <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user" %>
-        <!-- </div> -->
+      </div>
+
+
       <% end %>
+
+
 
     </div>
 
@@ -60,3 +65,20 @@
   </div>
 
 
+<!-- <script>
+$(document).ready(function() {
+  $( "#clickable" ).click(function() {
+    $( "share" ).show( "slow" );
+  });
+});
+</script> -->
+
+<!-- <script>
+$(document).ready(function() {
+  $('#clickable').on("click", function(e) {
+    e.preventDefault();
+    $(".share").removeClass();
+    $(".share").addClass(".new-share");
+  });
+});
+</script> -->
