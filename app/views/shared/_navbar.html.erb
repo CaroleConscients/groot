@@ -1,61 +1,85 @@
-<!-- new navbar -->
+  <div class="navbar-groot">
+    <!-- Left -->
+    <div class="navbar-left">
+      <%= link_to "Découvrir le projet", '#project', class: "navbar-item navbar-item-box"%>
+      <%#= link_to "Voir la forêt Groot", foret_groot_path, class: "navbar-item navbar-item-box" %>
+      <!-- Center -->
+    </div>
+    <div class="navbar-center">
+      <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-btn-plant' %>
+    </div>
 
-<!-- old navbar -->
-<div class="navbar-groot">
-  <!-- Projet -->
-    <%= link_to "Découvrir le projet", '#project', class: "navbar-round-btn navbar-text-small"%>
-  <!-- plant a groot -->
-  <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-groot-btn-plant' %>
-
-  <!-- Right Navigation -->
-  <div class="hidden-xs hidden-sm">
-
-    <!-- Different navigation if login or not -->
-    <% if user_signed_in? %>
-
-      <!-- Profile picture and dropdown -->
-      <div class="navbar-wagon-item">
-        <div class="dropdown">
-          <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li>
-              <%= link_to "Télécharger le certificat", download_certificate_path %>
-            </li>
-            <li>
-              <%= link_to "Voir la forêt Groot", foret_groot_path %>
-            </li>
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
-              <% end %>
-            </li>
-          </ul>
+    <!-- Right-->
+    <div class="hidden-xs hidden-sm navbar-right">
+      <!-- Different navigation if login or not -->
+      <% if user_signed_in? %>
+        <!-- Profile picture and dropdown -->
+        <div class="navbar-item ">
+          <div class="dropdown">
+            <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+              <li>
+                <%= link_to "Télécharger le certificat", download_certificate_path %>
+              </li>
+              <li>
+                <%= link_to "Voir la forêt Groot", foret_groot_path %>
+              </li>
+              <li>
+                <%= link_to destroy_user_session_path, method: :delete do %>
+                  <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
+                <% end %>
+              </li>
+            </ul>
+          </div>
         </div>
+
+      <% else %>
+
+      <div class="navbar-item-box">
+        <p class="navbar-small-text">Partager :</p>
+        <%#= link_to "", root_path, class: "navbar-item fa fa-facebook fb"%>
+        <%= social_share_button_tag %>
+        <%#= link_to "", root_path, class: "navbar-item fa fa-twitter tw"%>
+      </div>
+      <div class="class navbar-item navbar-item-box">
+          <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user" %>
       </div>
 
-    <% else %>
 
-      <!-- Login text link -->
-      <!-- // To add share on fb and twitter -->
-      <!-- <div class="navbar-right"> -->
-        <%#= link_to "", root_path, class: "navbar-round-btn fa fa-facebook"%>
-        <%#= link_to "", root_path, class: "navbar-round-btn fa fa-twitter"%>
-        <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-round-btn fa fa-user" %>
-      <!-- </div> -->
-    <% end %>
+      <% end %>
 
-  </div>
 
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
+
+    </div>
+
+    <!-- Dropdown list appearing on mobile only -->
+    <div class="navbar-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Découvrir le projet</a></li>
+          <li><a href="#">Other one</a></li>
+          <li><a href="#">Other one</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
+
+<!-- <script>
+$(document).ready(function() {
+  $( "#clickable" ).click(function() {
+    $( "share" ).show( "slow" );
+  });
+});
+</script> -->
+
+<!-- <script>
+$(document).ready(function() {
+  $('#clickable').on("click", function(e) {
+    e.preventDefault();
+    $(".share").removeClass();
+    $(".share").addClass(".new-share");
+  });
+});
+</script> -->
