@@ -37,8 +37,9 @@
 
       <div class="navbar-item-box">
         <p class="navbar-small-text">Partager :</p>
-        <%= link_to "", root_path, class: "navbar-item fa fa-facebook fb"%>
-        <%= link_to "", root_path, class: "navbar-item fa fa-twitter tw"%>
+        <%#= link_to "", root_path, class: "navbar-item fa fa-facebook fb"%>
+        <%= social_share_button_tag %>
+        <%#= link_to "", root_path, class: "navbar-item fa fa-twitter tw"%>
       </div>
       <div class="class navbar-item navbar-item-box">
           <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user" %>
@@ -56,7 +57,7 @@
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Some mobile link</a></li>
+          <li><a href="#">Découvrir le projet</a></li>
           <li><a href="#">Other one</a></li>
           <li><a href="#">Other one</a></li>
         </ul>
