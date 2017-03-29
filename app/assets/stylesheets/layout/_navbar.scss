@@ -18,6 +18,7 @@
 
 ////// NAVBAR LEFT
   .navbar-left {
+    order: 1;
     width: 30%;
     display: flex;
     align-items: center;
@@ -30,6 +31,7 @@
 
 //////NAVBAR CENTER
   .navbar-center {
+    order: 2;
     width: 40%;
     display: flex;
     align-items: center;
@@ -69,6 +71,7 @@
 
 ////// NAVBAR RIGHT
   .navbar-right {
+    order: 3;
     width: 30%;
     display: flex;
     align-items: center;

@@ -1,14 +1,30 @@
 <div class="navbar-groot">
-  <div class="navbar-left">
-    <%= link_to "Découvrir le projet", '#project', class: "navbar-item navbar-item-box"%>
+  <!-- <div class="navbar-left"> -->
+    <%#= link_to "Découvrir le projet", '#project', class: "navbar-item navbar-item-box"%>
     <%#= link_to "Voir la forêt Groot", foret_groot_path, class: "navbar-item navbar-item-box" %>
-  </div>
+  <!-- </div> -->
 
   <div class="navbar-center">
     <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-btn-plant' %>
   </div>
 
   <% if user_signed_in? %>
+    <!-- NAVBAR LEFT DESKTOP WHEN USER SIGNED-IN :-->
+    <div class="class navbar-left hidden-xs hidden-sm">
+        <div class="dropdown">
+          <div class="class dropdown-toggle navbar-small-text" id="navbar-wagon-menu" data-toggle="dropdown"><%= current_user.nickname %></div>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><%= link_to "Télécharger le certificat", download_certificate_path %></li>
+            <li><%= link_to "Voir la forêt Groot", foret_groot_path %></li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+    </div>
+
     <!-- NAVBAR RIGHT DESKTOP WHEN USER SIGNED-IN :-->
     <div class="hidden-xs hidden-sm navbar-right">
       <div class="navbar-item ">
