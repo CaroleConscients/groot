@@ -9,11 +9,11 @@
   </div>
 
   <% if user_signed_in? %>
-    <!-- NAVBAR RIGHT DESKTOP ON MOBILE WHEN USER SIGNED-IN :-->
+    <!-- NAVBAR RIGHT DESKTOP WHEN USER SIGNED-IN :-->
     <div class="hidden-xs hidden-sm navbar-right">
       <div class="navbar-item ">
         <div class="dropdown">
-          <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <div class="class dropdown-toggle navbar-small-text" id="navbar-wagon-menu" data-toggle="dropdown"><%= current_user.nickname %></div>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li><%= link_to "Télécharger le certificat", download_certificate_path %></li>
             <li><%= link_to "Voir la forêt Groot", foret_groot_path %></li>
@@ -43,6 +43,8 @@
     </div>
 
   <% else %>
+    <!-- NAVBAR LEFT DESKTOP WHEN USER SIGNED-OUT -->
+    <!-- todo -->
     <!-- NAVBAR RIGHT DESKTOP WHEN USER SIGNED-OUT :-->
     <div class="hidden-xs hidden-sm navbar-right">
       <div class="navbar-item-box">
