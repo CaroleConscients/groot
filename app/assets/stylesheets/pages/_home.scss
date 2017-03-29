@@ -1,27 +1,57 @@
-.fixed-container {
-   overflow: hidden;
-}
+////// global container
+  .fixed-container {
+     overflow: hidden;
+  }
 
-.timeline-style {
-  // background-color: white;
-  background-color: #f4f9fb;
-  border-left: 2px solid $darkblueone;
-  margin-bottom: -99999px;
-  padding: 0px 15px 99999px 15px;
-}
+//// grid et cards
+  .grid-col-style {
+    padding: 0px 0px;
+  }
 
-.inner {
-  padding: 5% 9% 5% 9%;
-}
-.project-style {
-  margin-bottom: -99999px;
-  padding: 0px 0px 99999px 0px;
-}
+  .grid-cache-bordered {
+    border: 1px solid #382c6b;
+  }
 
-.grid-col-style {
-  padding: 0px 0px;
-}
-// FONT POUR PROJET
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+  .card {
+    line-height: 0;
+    width: 2.5%;
+    img {
+      width: 100%;
+    }
+  }
+
+///// timeline
+  .timeline-style {
+    background-color: #f4f9fb;
+    border-left: 2px solid $darkblueone;
+    margin-bottom: -99999px;
+    padding: 0px 15px 99999px 15px;
+  }
+
+  .inner-timeline {
+    padding: 5% 9% 5% 9%;
+  }
+
+//// project
+  .project-style {
+    margin-bottom: -99999px;
+    padding: 0px 0px 99999px 0px;
+  }
+  .inner {
+  }
+
+  #project {
+    position: relative;
+    top: -35px;
+   }
+
+//// project font
   .project-font {
     // h3 {
     // font-family: "PT Sans", sans-serif;
@@ -68,51 +98,9 @@
     // }
   }
 
-.grid-cache-bordered {
-  border: 1px solid #382c6b;
-}
 
-// FORMAT GRID ET CARDS
-  .grid {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    }
 
-  .card {
-    line-height: 0;
-    width: 2.5%;
-    img {
-      width: 100%;
-    }
-  }
 
-// BOUTON GROOT DANS PROJET HOME
-  .home-groot-btn-plant {
-    display: flex;
-    align-items: center;
-    height: 60%;
-    padding: 10px;
-    cursor: pointer;
-    background-color: $darkbluethree;
-    border-radius: 0.5em;
-    box-shadow: $brown1oo4 1px 1px 10px;
-    font-family: "Cinzel", "serif";
-    color: #f1f7f9;
-    text-shadow: 0px 3px black;
-    font-size: 1.3rem;
-    letter-spacing: 2px
-  }
-  .home-groot-btn-plant:hover {
-    color: white;
-    background-color: #121c4a;
-    box-shadow: #f8a227 1px 1px 20px;
-    text-decoration: none;
-    transform: scale(0.98);
-    transition: box-shadow 0.4s ease-in-out;
-  }
 
-  #project {
-    position: relative;
-    top: -35px;
-   }
+
+
