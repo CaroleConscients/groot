@@ -1,28 +1,19 @@
 <div class="navbar-groot">
-  <div class="navbar-left">
-        <!-- <div class="navbar-item-box"> -->
-      <p class="navbar-small-text">Partager :</p>
-      <%#= link_to "", root_path, class: "navbar-item fa fa-facebook fb"%>
-      <%= social_share_button_tag %>
-      <%#= link_to "", root_path, class: "navbar-item fa fa-twitter tw"%>
-      <!-- </div> -->
+<!-- DESKTOP - NAVBAR RIGHT :-->
+  <div class="navbar-right">
+      <div class="navbar-item-box">
+        <p class="navbar-small-text hidden-xs hidden-sm">Partager :</p>
+        <%= social_share_button_tag %>
+      </div>
   </div>
-
-
-
-
+<!-- ......................................................... -->
   <div class="navbar-center">
     <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-btn-plant' %>
   </div>
-
+<!-- ......................................................... -->
   <% if user_signed_in? %>
-    <!-- NAVBAR LEFT DESKTOP WHEN USER SIGNED-IN :-->
-    <div class="class navbar-left hidden-xs hidden-sm">
-
-    </div>
-
-    <!-- NAVBAR RIGHT DESKTOP WHEN USER SIGNED-IN :-->
-    <div class="hidden-xs hidden-sm navbar-right">
+<!-- DESKTOP - NAVBAR LEFT - USER SIGNED-IN :-->
+    <div class="navbar-left hidden-xs hidden-sm">
       <div class="navbar-item ">
         <div class="dropdown">
           <div class="class dropdown-toggle navbar-small-text" id="navbar-wagon-menu" data-toggle="dropdown"><%= current_user.nickname %></div>
@@ -38,7 +29,8 @@
         </div>
       </div>
     </div>
-    <!-- DROPDOWN LIST MOBILE WHEN USER SIGNED-IN : -->
+
+<!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-IN : -->
     <div class="navbar-item hidden-md hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
@@ -55,21 +47,15 @@
     </div>
 
   <% else %>
-    <!-- NAVBAR LEFT DESKTOP WHEN USER SIGNED-OUT -->
-    <!-- todo -->
-    <!-- NAVBAR RIGHT DESKTOP WHEN USER SIGNED-OUT :-->
-    <div class="hidden-xs hidden-sm navbar-right">
-      <div class="navbar-item-box">
-      <p class="navbar-small-text">Partager :</p>
-      <%#= link_to "", root_path, class: "navbar-item fa fa-facebook fb"%>
-      <%= social_share_button_tag %>
-      <%#= link_to "", root_path, class: "navbar-item fa fa-twitter tw"%>
-      </div>
+<!-- DESKTOP - NAVBAR LEFT - USER SIGNED-OUT -->
+    <div class="navbar-left hidden-xs hidden-sm">
       <div class="class navbar-item navbar-item-box">
-      <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user" %>
+        <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user" %>
       </div>
     </div>
-<!-- DROPDOWN LIST MOBILE WHEN USER SIGNED-OUT : -->
+
+
+<!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-OUT : -->
     <div class="navbar-item hidden-md hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
