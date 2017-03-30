@@ -5,9 +5,11 @@
 
 // General style
 $font-family-sans-serif:  $base-font;
-$body-bg:                 $darkblueone;
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
+$body-bg:                 $darkblueone;
+$text-color: $text-white;
+
 $headings-font-family:    $header-font;
 
 // Semantic color scheme
@@ -26,3 +28,4 @@ $border-radius-small: 2px;
 
 // Grid
 $grid-columns: 13;
+

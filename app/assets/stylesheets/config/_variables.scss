@@ -2,18 +2,11 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-// $base-font: "Open Sans", "Helvetica", "sans-serif";
-// $header-font: "Raleway", "Helvetica", "sans-serif";
 @import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Droid+Serif:400,400i,700,700i|Droid+Sans:400,700|PT+Sans:400,400i,700,700i');
 $header-font: "Cinzel", "serif";
 $base-font: 'PT Sans', sans-serif;
 
-// font-family: 'Droid Sans', sans-serif;
-// font-family: 'PT Sans', sans-serif;
-
-
-// Local fonts (uncomment following lines)
+// Local fonts
 @font-face {
   font-family: "Helvetica";
   src: font-url('Helvetica/_Helvetica-Neue-Roman.eot');
@@ -24,15 +17,27 @@ $base-font: 'PT Sans', sans-serif;
 $my-font: "Helvetica";
 
 // Font-size and line-height
+$base-size: 14px;
+$base-height: 1.4;
 $header-size: 12px;
 $header-height: 1;
-$base-size: 16px;
-$base-height: 1.4;
+
+
 
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
-// Scheme
+// BACKGROUNDS COLORS
+$navbar-color: #24123f;
+$darkblueone: #00001f;
+
+// TEXT COLORS
+
+$text-white: #f5f8fa;
+$text-purple: #cbc3d8;
+$text-purple-lighter: #e7e3ed;
+
+
 $brand-color: #D23333;
 
 $red: #EE5F5B;
@@ -42,17 +47,17 @@ $orange: #E67E22;
 $green: #32B796;
 $gray: #000000;
 
-$navbar-color: #24123f;
+
 $fb-color: #3b5998;
 $twitter-color: #55acee;
 
-$text-purple: #cbc3d8;
-$text-purple-lighter: #e7e3ed;
 
 
-$text-white: #f1f7f9;
 
-$darkblueone: #00001f;
+// $text-white: #f1f7f9;
+
+
+
 $darkbluetwo: #090e32;
 // $darkbluethree: #0f183f;
 $darkbluethree: #1D1D3A;
@@ -79,8 +84,34 @@ $green1oo2: #232920;
 $green2oo2: #658c54;
 
 
+// RESPONSIVE
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
 
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
 
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
 
 
 

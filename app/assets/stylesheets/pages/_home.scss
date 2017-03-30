@@ -59,14 +59,18 @@
     // color: $brown1oo4;
     // }
 
-    color: #f5f8fa; //text blanc idem twitter
+    // color: #f5f8fa; //text blanc idem twitter
     // color: #babdc5; text gris idem twitter
     // color: #ddc7d0; light violet
     // color: #f1f7f9; premier blanc
     h1 {
-      font-size: 25px;
+      font-size: 28px;
       letter-spacing: 2px;
       margin-bottom: 9%;
+            /* Tablette paysage et Desktop MD ET LG*/
+        // @media (min-width: $screen-md-min) {
+        //    font-size: 45px;
+        //  }
     }
 
     h2 {
@@ -75,14 +79,10 @@
     }
 
     p {
-      font-family: "Helvetica";
-      font-size: 12px;
+      // font-family: "Helvetica";
+      font-size: 14px;
       text-align: justify;
       letter-spacing: 0.5px;
-      /* Tablette paysage et Desktop MD ET LG*/
-        // @media (min-width: $screen-md-min) {
-        //   color: color;
-        // }
     }
     //     p {
     //   font-family: "PT Sans", sans-serif;

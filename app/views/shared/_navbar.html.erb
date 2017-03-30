@@ -31,7 +31,7 @@
     </div>
 
 <!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-IN : -->
-    <div class="navbar-item-left hidden-md hidden-lg">
+    <div class="navbar-left navbar-item-mobile hidden-md hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu navbar-groot-dropdown-menu">
@@ -47,16 +47,16 @@
     </div>
 
   <% else %>
+
 <!-- DESKTOP - NAVBAR LEFT - USER SIGNED-OUT -->
     <div class="navbar-left hidden-xs hidden-sm">
       <div class="navbar-item-left">
-        <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user" %>
+        <%= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user fa-lg" %>
       </div>
     </div>
 
-
 <!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-OUT -->
-    <div class="navbar-item hidden-md hidden-lg">
+    <div class="navbar-left navbar-item-mobile hidden-md hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu navbar-groot-dropdown-menu">
