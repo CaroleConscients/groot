@@ -1,8 +1,7 @@
 ////// NAVBAR CONTAINER
   .navbar-groot {
-    // background-color: $navbar-color;
-    background-color: rgb(14, 0, 39);
-    // border-bottom: 0.5px solid #1c0d33;
+    background-color: $navbar-color;
+    color: $text-white;
     border-bottom: 1px solid rgba(249, 162, 59, 0.2);
     display: flex;
     justify-content: space-between;
@@ -38,10 +37,11 @@
     padding: 6px 10px;
     margin: auto;
     // background-color: #372354;
-    background-color: rgb(18, 4, 45);
+    background-color: $violet-button;
     border-radius: 0.5em;
-    box-shadow: #F9A23B 1px 1px 10px;
-    color: $text-purple;
+    box-shadow: $yellow-orange 1px 1px 10px;
+    // color: $text-purple;
+    color: $text-white;
     text-shadow: 0px 3px black;
     font-size: 12px;
     letter-spacing: 2px;
@@ -56,7 +56,7 @@
   .navbar-btn-plant:hover {
     color: $text-purple-lighter;
     background-color: #1c0b35;
-    box-shadow: #F9A23B 1px 1px 20px;
+    box-shadow: $yellow-orange 1px 1px 20px;
     text-decoration: none;
     transform: scale(0.98);
     transition: box-shadow 0.4s ease-in-out;
@@ -91,7 +91,8 @@
   .navbar-item-box-right:hover {
     background-color: #1c0b35;
     height: 65px;
-    color: $text-purple-lighter;
+    // color: $text-purple-lighter;
+    color: $text-white;
     text-decoration: none;
     transform: scale(0.98);
     transition: color 0.4s ease-in-out;
@@ -107,7 +108,8 @@
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 12px;
-    color: $text-purple;
+    // color: $text-purple;
+    color: $text-white;
     margin: 0px;
     padding: 0px 5px;
   }
@@ -128,7 +130,8 @@
     flex: 0 1 auto;
     cursor: pointer;
     padding: 0 10px;
-    color: $text-purple;
+    // color: $text-purple;
+    color: $text-white;
     text-shadow: 2px 0px black;
    }
   .navbar-item-mobile {
@@ -137,12 +140,14 @@
     position: relative;
     left: 10px;
     cursor: pointer;
-    color: $text-purple;
+    // color: $text-purple;
+    color: $text-white;
     text-shadow: 2px 0px black;
    }
 
   .navbar-item-left {
-    color: #cbc3d8;
+    // color: #cbc3d8;
+    color: $text-white;
     text-shadow: 2px 0px black;
     height: 55px;
     display: flex;
@@ -164,9 +169,11 @@
 //* NAVBAR DROPDOWN MENU */
   .navbar-groot-dropdown-menu {
     background-color: $navbar-color;
+    color: $text-white;
     margin-top: 5px;
     box-shadow: 1px 1px 4px #E6E6E6;
-    border-color: $text-purple;
+    // border-color: $text-purple;
+    border-color: $text-white;
     left: 0;
     right: auto;
   }
@@ -182,7 +189,7 @@
   }
   .navbar-groot-dropdown-menu li > a:hover {
     background: transparent !important;
-    color: black !important;
+    color: $text-purple-lighter !important;
   }
   .navbar-groot-dropdown-menu:before {
     content: ' ';
