@@ -1,6 +1,9 @@
 ////// NAVBAR CONTAINER
   .navbar-groot {
-    background-color: $navbar-color;
+    // background-color: $navbar-color;
+    background-color: rgb(14, 0, 39);
+    // border-bottom: 0.5px solid #1c0d33;
+    border-bottom: 1px solid rgba(249, 162, 59, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +37,8 @@
     cursor: pointer;
     padding: 6px 10px;
     margin: auto;
-    background-color: #372354;
+    // background-color: #372354;
+    background-color: rgb(18, 4, 45);
     border-radius: 0.5em;
     box-shadow: #F9A23B 1px 1px 10px;
     color: $text-purple;
@@ -42,10 +46,10 @@
     font-size: 12px;
     letter-spacing: 2px;
       @media (min-width: $screen-md-min) {
-        font-size: 14px;
+        font-size: 13px;
       }
       @media (min-width: $screen-lg-min) {
-      font-size: 15px;
+      font-size: 13px;
       }
   }
 

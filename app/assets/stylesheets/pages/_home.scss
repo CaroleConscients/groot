@@ -28,7 +28,7 @@
 
 ///// timeline
   .timeline-style {
-    background-color: #f4f9fb;
+    background-color: white;
     border-left: 2px solid $darkblueone;
     margin-bottom: -99999px;
     padding: 0px 15px 99999px 15px;
@@ -36,6 +36,7 @@
 
   .inner-timeline {
     padding: 5% 9% 5% 9%;
+    background-color: white;
   }
 
 //// project
@@ -53,36 +54,22 @@
 
 //// project font
   .project-font {
-    // h3 {
-    // font-family: "PT Sans", sans-serif;
-    // font-size: 20px;
-    // color: $brown1oo4;
-    // }
-
-    // color: #f5f8fa; //text blanc idem twitter
-    // color: #babdc5; text gris idem twitter
-    // color: #ddc7d0; light violet
-    // color: #f1f7f9; premier blanc
     h1 {
       font-size: 28px;
       letter-spacing: 2px;
       margin-bottom: 9%;
+      margin-top: 0px;
+      padding: 15px 15px 20px 15px;
             /* Tablette paysage et Desktop MD ET LG*/
         // @media (min-width: $screen-md-min) {
         //    font-size: 45px;
         //  }
     }
-
-    h2 {
-      font-size: 20px;
-      letter-spacing: 2px;
-    }
-
     p {
-      // font-family: "Helvetica";
       font-size: 14px;
       text-align: justify;
       letter-spacing: 0.5px;
+      padding: 0px 15px;
     }
     //     p {
     //   font-family: "PT Sans", sans-serif;
