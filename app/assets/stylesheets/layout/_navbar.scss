@@ -171,9 +171,9 @@
     background-color: $navbar-color;
     color: $text-white;
     margin-top: 5px;
-    box-shadow: 1px 1px 4px #E6E6E6;
+    // box-shadow: 1px 1px 4px $yellow-orange;
     // border-color: $text-purple;
-    border-color: $text-white;
+    border-color: rgba(249, 162, 59, 0.2);
     left: 0;
     right: auto;
   }
@@ -182,7 +182,7 @@
     transition: color 0.3s ease;
     // attention dessous fait sauter le style de la home
     // font-weight: lighter !important;
-    // color: $text-purple !important;
+    color: $text-white !important;
     // font-size: 15px !important;
     // line-height: 22px !important;
     padding: 25px 25px;
@@ -200,6 +200,6 @@
     top: -6px;
     background-color: $navbar-color;
     transform: rotate(45deg);
-    border-left: 1px solid $text-purple;
-    border-top: 1px solid $text-purple;
+    border-left: 1px solid rgba(249, 162, 59, 0.2);
+    border-top: 1px solid rgba(249, 162, 59, 0.2);
    }

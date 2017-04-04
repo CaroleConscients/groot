@@ -17,6 +17,11 @@
   text-shadow: none;
 }
 
+.groot-modal-close:active {
+  color: $text-white;
+  opacity: 1;
+  text-shadow: none;
+}
 // container de la modal
 .groot-modal-dialog {
   width: 45%;
@@ -24,7 +29,8 @@
 }
 
 .groot-modal-content {
-  background-color: $darkblueone;
+  background-color: $navbar-color;
+  // background-color: $darkblueone;
   // opacity: 0.85;
   height: 450px;
   border: none;
