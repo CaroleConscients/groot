@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170324111308) do
+ActiveRecord::Schema.define(version: 20170405093652) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20170324111308) do
     t.string   "picture_link"
     t.string   "color"
     t.string   "tree_id"
+    t.index ["last_turned"], name: "index_cards_on_last_turned", using: :btree
+    t.index ["turned"], name: "index_cards_on_turned", using: :btree
     t.index ["user_id"], name: "index_cards_on_user_id", using: :btree
   end
 
