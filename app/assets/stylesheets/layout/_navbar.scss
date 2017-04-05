@@ -43,8 +43,11 @@
     // color: $text-purple;
     color: $text-white;
     text-shadow: 0px 3px black;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 2px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 12px;
+      }
       @media (min-width: $screen-md-min) {
         font-size: 13px;
       }
@@ -65,6 +68,31 @@
   .navbar-btn-plant:focus{
     color: $text-purple-lighter;
     text-decoration: none;
+  }
+
+  .navbar-btn-planted {
+    flex: 0 1 auto;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: auto;
+    // background-color: #372354;
+    background-color: $violet-button;
+    border-radius: 0.5em;
+    box-shadow: $yellow-orange 1px 1px 10px;
+    // color: $text-purple;
+    color: $text-white;
+    text-shadow: 0px 3px black;
+    font-size: 9px;
+    letter-spacing: 2px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 12px;
+      }
+      @media (min-width: $screen-md-min) {
+        font-size: 13px;
+      }
+      @media (min-width: $screen-lg-min) {
+      font-size: 13px;
+      }
   }
 
 ////// NAVBAR RIGHT
