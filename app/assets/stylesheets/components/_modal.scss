@@ -1,106 +1,135 @@
-//page entiere
-.groot-modal {
-  // background-color: $darkblueone;
-  // opacity: 0.75 !important;
-}
+//page entiere de la modal
+  .groot-modal {
+    // background-color: $darkblueone;
+    // opacity: 0.75 !important;
+  }
 
-.groot-modal-close {
-  color: $text-white;
-  opacity: 1;
-  text-shadow: none;
-}
+//X pour fermer la modal
+  .groot-modal-close {
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+  }
+  .groot-modal-close:hover{
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+    text-decoration: none;
+  }
 
-.groot-modal-close:hover {
-  color: $text-white;
-  opacity: 1;
-  text-shadow: none;
-}
+  .groot-modal-close:active {
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+    text-decoration: none;
+    border: none;
+  }
 
-.groot-modal-close:active {
-  color: $text-white;
-  opacity: 1;
-  text-shadow: none;
-}
+  .groot-modal-close:focus {
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+  }
+
+  // .groot-modal-close:focus {
+  //   color: $text-white;
+  //   opacity: 1;
+  //   text-shadow: none;
+  //   text-decoration: none;
+  //   border: none;
+  // }
+
 // container de la modal
-.groot-modal-dialog {
-  width: 95%;
-  margin: 75px auto;
-      @media (min-width: $screen-sm-min) {
-        width: 55%;
-      }
-      @media (min-width: $screen-md-min) {
+  .groot-modal-dialog {
+    width: 95%;
+    margin: 75px auto;
+        @media (min-width: $screen-sm-min) {
+          width: 55%;
+        }
+        @media (min-width: $screen-md-min) {
+          width: 50%;
+        }
+        @media (min-width: $screen-lg-min) {
         width: 50%;
-      }
+        }
+  }
+
+// tout le contenu de la modal
+  .groot-modal-content {
+    background-color: $navbar-color;
+    opacity: 1;
+    border: none;
       @media (min-width: $screen-lg-min) {
-      width: 50%;
+        padding: 10px 20px;
       }
-}
+  }
 
-.groot-modal-content {
-  // background-color: red;
-  background-color: $navbar-color;
-  opacity: 1;
-  // height: 450px; a la place margin bottom au footer
-  border: none;
-    @media (min-width: $screen-lg-min) {
-      padding: 10px 20px;
-    }
-}
+  .groot-modal-header {
+    border: none;
+  }
 
-.groot-modal-header {
-  border: none;
-}
-
-.groot-modal-title {
-  color: $text-white;
-  padding-top: 15px;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: 18px;
-    @media (min-width: $screen-lg-min) {
-      font-size: 20px;
-    }
-}
-
-.groot-modal-body {
-  p {
-    padding: 0px 25px;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    text-align: justify;
-    line-height: 16px;
+  .groot-modal-title {
+    color: $text-white;
+    padding-top: 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 18px;
       @media (min-width: $screen-lg-min) {
-      font-size: 14px;
-      padding-top: 30px;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+  }
+
+  .groot-modal-body {
+    p {
+      color: text-white !important;
+      padding: 0px 25px;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-align: justify;
+      line-height: 16px;
+        @media (min-width: $screen-lg-min) {
+        font-size: 14px;
+        padding-top: 30px;
+        line-height: 22px;
+        letter-spacing: 1px;
+      }
     }
   }
-}
 
 
-.groot-modal-footer {
-  padding: 0px 25px 40px 25px;;
-  border: none;
-  font-style: italic;
-  text-align: right;
-    p {
-    font-size: 9px;
-    padding: 15px 0px 10px 22px;
-    }
-    // a {
-    //   color: $twitter-color;
-    //   text-decoration: underline;
-    //   cursor: pointer;
-    // }
-}
+  .groot-modal-footer {
+    padding: 0px 25px 40px 25px;;
+    border: none;
+    font-style: italic;
+    text-align: right;
+      p {
+      font-size: 9px;
+      padding: 15px 0px 10px 22px;
+        @media (min-width: $screen-lg-min) {
+        font-size: 12px;
+         padding: 30px 0px 30px 22px;
+        }
+      }
+      a:hover {
+        color: $text-white;
+        text-decoration: underline;
+      //   cursor: pointer;
+      }
+  }
 
 // .groot-modal-a
   .twitter-plant-btn {
     font-size: 11px;
-    color: white;
+    color: $text-white;
     padding: 5px 5px;
     border-radius: 1px;
     background: $twitter-color;
+      @media (min-width: $screen-lg-min){
+        font-size: 14px;
+        padding: 10px 10px;
+      }
   }
 
 
