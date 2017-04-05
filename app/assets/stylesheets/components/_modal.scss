@@ -1,100 +1,191 @@
-//page entiere
-.groot-modal {
-  // background-color: $darkblueone;
-  // opacity: 0.75 !important;
-}
-
-.groot-modal-close {
-  color: $text-white;
-  opacity: 1;
-  text-shadow: none;
-}
-
-.groot-modal-close:hover {
-  color: $text-white;
-  opacity: 1;
-  text-shadow: none;
-}
-
-.groot-modal-close:active {
-  color: $text-white;
-  opacity: 1;
-  text-shadow: none;
-}
-// container de la modal
-.groot-modal-dialog {
-  width: 95%;
-  margin: 75px auto;
-      @media (min-width: $screen-sm-min) {
-        width: 55%;
-      }
-      @media (min-width: $screen-md-min) {
-        width: 50%;
-      }
-      @media (min-width: $screen-lg-min) {
-      width: 50%;
-      }
-}
-
-.groot-modal-content {
-  // background-color: red;
-  background-color: $navbar-color;
-  opacity: 1;
-  // height: 450px; a la place margin bottom au footer
-  border: none;
-}
-
-.groot-modal-header {
-  border: none;
-}
-
-.groot-modal-title {
-  color: $text-white;
-  padding-top: 15px;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: 18px;
-    @media (min-width: $screen-lg-min) {
-      font-size: 20px;
-    }
-}
-
-.groot-modal-body {
-  p {
-    padding: 0px 25px;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    text-align: justify;
-    line-height: 16px;
+//page entiere de la modal
+  .groot-modal {
+    // background-color: $darkblueone;
+    // opacity: 0.75 !important;
   }
-}
 
+//X pour fermer la modal
+  .groot-modal-close {
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+  }
+  .groot-modal-close:hover{
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+    text-decoration: none;
+  }
 
-.groot-modal-footer {
-  padding: 0px 25px 40px 25px;;
-  border: none;
-  font-style: italic;
-  text-align: right;
-    p {
-    font-size: 9px;
-    padding: 15px 0px 10px 22px;
-    }
-    a {
-      color: $twitter-color;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-}
+  .groot-modal-close:active {
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+    text-decoration: none;
+    border: none;
+  }
 
-// .groot-modal-a
+  .groot-modal-close:focus {
+    color: $text-white;
+    opacity: 1;
+    text-shadow: none;
+  }
 
-  // .modal-btn-plant {
-  //     color: white;
-  // padding: 10px 15px;
-  // border-radius: 0.5em;
-  // font-weight: bold;
-  // background: $violet-button;
-  // box-shadow: $grid-orange 1px 1px 10px;
-  // transition: background 0.3s ease;
+  // .groot-modal-close:focus {
+  //   color: $text-white;
+  //   opacity: 1;
+  //   text-shadow: none;
+  //   text-decoration: none;
+  //   border: none;
   // }
+
+// container de la modal
+  .groot-modal-dialog {
+    width: 95%;
+    margin: 75px auto;
+        @media (min-width: $screen-sm-min) {
+          width: 55%;
+        }
+        @media (min-width: $screen-md-min) {
+          width: 50%;
+        }
+        @media (min-width: $screen-lg-min) {
+        width: 50%;
+        }
+  }
+
+// tout le contenu de la modal
+  .groot-modal-content {
+    background-color: $navbar-color;
+    opacity: 1;
+    border: none;
+      @media (min-width: $screen-lg-min) {
+        padding: 10px 20px;
+      }
+  }
+
+  .groot-modal-header {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  .groot-modal-title {
+    color: $text-white;
+    padding-top: 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 18px;
+      @media (min-width: $screen-lg-min) {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+  }
+
+  .groot-modal-body {
+    p {
+      color: text-white !important;
+      padding: 0px 25px;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-align: justify;
+      line-height: 16px;
+        @media (min-width: $screen-lg-min) {
+        font-size: 14px;
+        padding-top: 30px;
+        line-height: 22px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+
+  .groot-modal-footer {
+    padding: 0px 25px 40px 25px;;
+    border: none;
+    font-style: italic;
+    text-align: right;
+      h4 {
+        font-size: 12px;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        text-align: center;
+        padding-top: 15px;
+      line-height: 15px;
+        @media (min-width: $screen-lg-min) {
+          font-size: 18px;
+          text-align: center;
+          padding-top: 25px;
+          font-style: normal;
+          line-height: 28px;
+          letter-spacing: 2px;
+        }
+      }
+      h6 {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+        font-style: normal;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 0px;
+        @media (min-width: $screen-lg-min) {
+          font-size: 13px;
+          text-align: center;
+          font-style: normal;
+          letter-spacing: 1px;
+          padding: 16px;
+        }
+      }
+      p {
+        font-size: 9px;
+        padding: 15px 0px 10px 22px;
+          @media (min-width: $screen-lg-min) {
+          font-size: 12px;
+          padding: 30px 0px 30px 22px;
+        }
+      }
+      a:hover {
+        color: $text-white;
+        text-decoration: underline;
+      //   cursor: pointer;
+      }
+  }
+
+  .twitter-plant-btn {
+    font-size: 11px;
+    color: $text-white;
+    padding: 5px 5px;
+    border-radius: 1px;
+    background: $twitter-color;
+      @media (min-width: $screen-lg-min){
+        font-size: 14px;
+        padding: 10px 10px;
+      }
+  }
+
+  .modal-share-congrats {
+    text-align: center;
+    padding-top: 10px;
+    .social-share-button {
+      .ssb-icon {
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        margin: 0px 3px;
+        border-radius: 50%;
+      }
+    }
+      @media (min-width: $screen-lg-min){
+        .social-share-button {
+          .ssb-icon {
+            background-size: 30px 30px;
+            height: 30px;
+            width: 30px;
+            margin: 0px 5px;
+            border-radius: 50%;
+          }
+        }
+      }
+  }
+
