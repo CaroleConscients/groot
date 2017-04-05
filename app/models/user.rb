@@ -14,6 +14,8 @@ class User < ApplicationRecord
     reset_last_turned
     unless card.nil?
       user_count = User.count
+      # user count for navbar message
+      self.update(tree_count: user_count)
       # generate the tree_id with prefix
       tree_id = generate_tree_id(user_count)
       card.update(turned: true, last_turned: true, tree_id: tree_id, user: self)
