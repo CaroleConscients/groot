@@ -2,37 +2,37 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-// $base-font: "Open Sans", "Helvetica", "sans-serif";
-// $header-font: "Raleway", "Helvetica", "sans-serif";
-@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Droid+Serif:400,400i,700,700i|Droid+Sans:400,700|PT+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Droid+Serif:400,400i,700,700i|Droid+Sans:400,700|PT+Sans:400,400i,700,700i|Open+Sans+Condensed:300,700');
 $header-font: "Cinzel", "serif";
-$base-font: 'PT Sans', sans-serif;
-
-// font-family: 'Droid Sans', sans-serif;
-// font-family: 'PT Sans', sans-serif;
-
-
-// Local fonts (uncomment following lines)
-@font-face {
-  font-family: "Helvetica";
-  src: font-url('Helvetica/_Helvetica-Neue-Roman.eot');
-  src: font-url('Helvetica/_Helvetica-Neue-Roman.eot?#iefix') format('embedded-opentype'),
-       font-url('Helvetica/_Helvetica-Neue-Roman.woff') format('woff'),
-       font-url('Helvetica/_Helvetica-Neue-Roman.ttf') format('truetype')
-}
-$my-font: "Helvetica";
+$base-font: 'Droid Sans', sans-serif;
 
 // Font-size and line-height
+$base-size: 14px;
+$base-height: 1.4;
 $header-size: 12px;
 $header-height: 1;
-$base-size: 16px;
-$base-height: 1.4;
+
+
 
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
-// Scheme
+// BACKGROUNDS COLORS
+$navbar-color: #0e0027;
+// $darkblueone: rgba(0, 0, 31, 0.94);
+$darkblueone: #0f0f2c;
+$darkvioletone: rgba(14, 0, 39,0.98);
+$violet-button: rgb(18, 4, 45);
+
+// TEXT COLORS
+$text-white: #e7e7e9;
+$text-purple: #cbc3d8;
+$text-purple-lighter: #e7e3ed;
+
+// DETAILS COLORS
+$yellow-orange: #F9A23B;
+$yellow-orange-darker: #ca8538;
+
 $brand-color: #D23333;
 
 $red: #EE5F5B;
@@ -46,41 +46,43 @@ $gray: #000000;
 $fb-color: #3b5998;
 $twitter-color: #55acee;
 
-$text-purple: #cbc3d8;
-$text-purple-lighter: #e7e3ed;
 
 
-$text-white: #f1f7f9;
 
-$darkblueone: #00001f;
-$darkbluetwo: #090e32;
-// $darkbluethree: #0f183f;
-$darkbluethree: #1D1D3A;
-$blue1oo7: #034d82;
-$blue2oo7: #0862a0;
-$blue3oo7: #197cbf;
-$blue4oo7: #197cbf;
-$blue5oo7: #1b92d5;
-$blue6oo7: #27aadd;
-$blue7oo7: #2eb6d5;
-
-$brown1oo4: #c6882f;
-$brown2oo4: #c39364;
-$brown3oo4: #ecc095;
-$brown4oo4: #836c4c;
-
-$purple1oo2: #47101f;
-$purple2oo2: #73324d;
-
-$red1oo2: #8c0010;
-$red2oo2: #dd302a;
-
-$green1oo2: #232920;
-$green2oo2: #658c54;
+// $text-white: #f1f7f9;
 
 
 
 
+
+// RESPONSIVE
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
 
 
 

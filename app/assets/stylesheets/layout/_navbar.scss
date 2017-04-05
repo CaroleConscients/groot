@@ -1,15 +1,14 @@
 ////// NAVBAR CONTAINER
   .navbar-groot {
+    background-color: $navbar-color;
+    color: $text-white;
+    border-bottom: 1px solid rgba(249, 162, 59, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 55px;
+    height: 65px;
     font-family: "Cinzel", "serif";
-    // background-color: rgb(22, 18, 62);
-    background-color: #24123f;
-    // background-color: #2e184f;
-    // padding: 0px 20px;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -18,22 +17,17 @@
 
 ////// NAVBAR LEFT
   .navbar-left {
-    width: 30%;
+    order: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 1px;
-    // text-align: center;
   }
 
 //////NAVBAR CENTER
   .navbar-center {
-    width: 40%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    order: 2;
+    height: 65px;
   }
 
 // NAVBAR CENTER BUTTON
@@ -43,20 +37,26 @@
     padding: 6px 10px;
     margin: auto;
     // background-color: #372354;
+    background-color: $violet-button;
     border-radius: 0.5em;
-    box-shadow: #F9A23B 1px 1px 10px;
-    color: $text-purple;
+    box-shadow: $yellow-orange 1px 1px 10px;
+    // color: $text-purple;
+    color: $text-white;
     text-shadow: 0px 3px black;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 2px;
+      @media (min-width: $screen-md-min) {
+        font-size: 13px;
+      }
+      @media (min-width: $screen-lg-min) {
+      font-size: 13px;
+      }
   }
 
   .navbar-btn-plant:hover {
     color: $text-purple-lighter;
-    // background-color: #372354;
     background-color: #1c0b35;
-    // box-shadow: #FAB360 1px 1px 20px;
-    box-shadow: #F9A23B 1px 1px 20px;
+    box-shadow: $yellow-orange 1px 1px 20px;
     text-decoration: none;
     transform: scale(0.98);
     transition: box-shadow 0.4s ease-in-out;
@@ -69,7 +69,7 @@
 
 ////// NAVBAR RIGHT
   .navbar-right {
-    width: 30%;
+    order: 3;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -77,37 +77,44 @@
   }
 
 // NAVBAR RIGHT ITEMS
-  .navbar-item-box {
+  .navbar-item-box-right {
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 55px;
-    padding: 0px;
+    position: absolute;
+    // position: relative; decentre le bouton
+    top: 0px;
+    right: 10px;
   }
 
-  .navbar-item-box:hover {
+  .navbar-item-box-right:hover {
     background-color: #1c0b35;
-    height: 55px;
-    color: $text-purple-lighter;
+    height: 65px;
+    // color: $text-purple-lighter;
+    color: $text-white;
     text-decoration: none;
     transform: scale(0.98);
     transition: color 0.4s ease-in-out;
   }
 
-  .navbar-item-box:focus {
+  .navbar-item-box-right:focus {
     color: $text-purple-lighter;
     text-decoration: none;
   }
 
+// NAVBAR TEXT FONT
   .navbar-small-text {
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 12px;
-    color: $text-purple;
+    // color: $text-purple;
+    color: $text-white;
     margin: 0px;
     padding: 0px 5px;
   }
 
+// SOCIAL
   .tw:hover{
     background-color: $twitter-color;
     padding: 15px 11.5px;
@@ -118,14 +125,38 @@
     padding: 15px;
   }
 
-
 // NAVBAR ITEMS
   .navbar-item {
     flex: 0 1 auto;
     cursor: pointer;
     padding: 0 10px;
-    color: $text-purple;
+    // color: $text-purple;
+    color: $text-white;
     text-shadow: 2px 0px black;
+   }
+  .navbar-item-mobile {
+    // flex: 0 1 auto;
+    display: flex;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    // color: $text-purple;
+    color: $text-white;
+    text-shadow: 2px 0px black;
+   }
+
+  .navbar-item-left {
+    // color: #cbc3d8;
+    color: $text-white;
+    text-shadow: 2px 0px black;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    // VOIR SI LAISSE ABSOLUTE OU METTRE RELATIVE
+    top: 0px;
+    left: 10px;
   }
 
   .navbar-item:hover, :focus {
@@ -135,59 +166,40 @@
     transition: color 0.4s ease-in-out;
   }
 
-
-
-
-
-
-
-// OLD CLASSES
-
-
-
-.navbar-text-small {
-  font-size: 8px;
-  letter-spacing: 1px;
-}
-
-.navbar-round-btn {
-  color: #f1f7f9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-
-
-/* Navbar dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
+//* NAVBAR DROPDOWN MENU */
+  .navbar-groot-dropdown-menu {
+    background-color: $navbar-color;
+    color: $text-white;
+    margin-top: 5px;
+    // box-shadow: 1px 1px 4px $yellow-orange;
+    // border-color: $text-purple;
+    border-color: rgba(249, 162, 59, 0.2);
+    left: 0;
+    right: auto;
+  }
+  .navbar-groot-dropdown-menu, p, ul> li > a {
+    text-shadow: none;
+    transition: color 0.3s ease;
+    // attention dessous fait sauter le style de la home
+    // font-weight: lighter !important;
+    color: $text-white !important;
+    // font-size: 15px !important;
+    // line-height: 22px !important;
+    padding: 25px 25px;
+  }
+  .navbar-groot-dropdown-menu li > a:hover {
+    background: transparent !important;
+    color: $text-purple-lighter !important;
+  }
+  .navbar-groot-dropdown-menu:before {
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 10px;
+    top: -6px;
+    background-color: $navbar-color;
+    transform: rotate(45deg);
+    border-left: 1px solid rgba(249, 162, 59, 0.2);
+    border-top: 1px solid rgba(249, 162, 59, 0.2);
+   }
