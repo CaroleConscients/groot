@@ -1,4 +1,3 @@
-
 //page entiere
 .groot-modal {
   // background-color: $darkblueone;
@@ -25,9 +24,9 @@
 // container de la modal
 .groot-modal-dialog {
   width: 95%;
-  margin: 65px auto;
+  margin: 75px auto;
       @media (min-width: $screen-sm-min) {
-        width: 95%;
+        width: 55%;
       }
       @media (min-width: $screen-md-min) {
         width: 50%;
@@ -38,10 +37,10 @@
 }
 
 .groot-modal-content {
+  // background-color: red;
   background-color: $navbar-color;
-  // background-color: $darkblueone;
   opacity: 1;
-  height: 450px;
+  // height: 450px; a la place margin bottom au footer
   border: none;
 }
 
@@ -61,16 +60,41 @@
     }
 }
 
-// .groot-modal-body
+.groot-modal-body {
+  p {
+    padding: 0px 25px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    line-height: 16px;
+  }
+}
 
-// .groot-modal-p
 
 .groot-modal-footer {
+  padding: 0px 25px 40px 25px;;
   border: none;
   font-style: italic;
+  text-align: right;
     p {
-      font-size: 12px;
+    font-size: 9px;
+    padding: 15px 0px 10px 22px;
+    }
+    a {
+      color: $twitter-color;
+      text-decoration: underline;
+      cursor: pointer;
     }
 }
 
 // .groot-modal-a
+
+  // .modal-btn-plant {
+  //     color: white;
+  // padding: 10px 15px;
+  // border-radius: 0.5em;
+  // font-weight: bold;
+  // background: $violet-button;
+  // box-shadow: $grid-orange 1px 1px 10px;
+  // transition: background 0.3s ease;
+  // }
