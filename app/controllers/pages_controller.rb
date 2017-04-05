@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
     @cards = Card.order(:id)
     @turned_counter = Card.where(turned: true).count
-    @grid_colors = ["grid_color_1.jpg", "grid_color_2.jpg", "grid_color_3.jpg", "grid_color_4.jpg"]
+    @grid_colors = ["grid_color_1.jpg", "grid_color_2.jpg", "grid_color_3.jpg", "grid_color_4.jpg", "grid_color_1.jpg", "grid_color_2.jpg", "grid_color_3.jpg"]
   end
 
   # HTML certificate to convert to pdf
