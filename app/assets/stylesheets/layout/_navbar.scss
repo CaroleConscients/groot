@@ -23,6 +23,32 @@
     justify-content: flex-start;
   }
 
+  .navbar-item-left {
+    // color: #cbc3d8;
+    color: $text-white;
+    text-shadow: 2px 0px black;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    // VOIR SI LAISSE ABSOLUTE OU METTRE RELATIVE
+    top: 0px;
+    left: 10px;
+  }
+
+  .navbar-item-mobile {
+    // flex: 0 1 auto;
+    display: flex;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    // color: $text-purple;
+    color: $text-white;
+    // text-shadow: 2px 0px black;
+    font-size: 18px;
+   }
+
 //////NAVBAR CENTER
   .navbar-center {
     display: flex;
@@ -30,7 +56,6 @@
     height: 65px;
   }
 
-// NAVBAR CENTER BUTTON
   .navbar-btn-plant {
     flex: 0 1 auto;
     cursor: pointer;
@@ -104,7 +129,6 @@
     margin-right: 0px;
   }
 
-// NAVBAR RIGHT ITEMS
   .navbar-item-box-right {
     height: 65px;
     display: flex;
@@ -153,7 +177,7 @@
     padding: 15px;
   }
 
-// NAVBAR ITEMS
+// NAVBAR ITEM
   .navbar-item {
     flex: 0 1 auto;
     cursor: pointer;
@@ -162,30 +186,6 @@
     color: $text-white;
     text-shadow: 2px 0px black;
    }
-  .navbar-item-mobile {
-    // flex: 0 1 auto;
-    display: flex;
-    position: relative;
-    left: 10px;
-    cursor: pointer;
-    // color: $text-purple;
-    color: $text-white;
-    text-shadow: 2px 0px black;
-   }
-
-  .navbar-item-left {
-    // color: #cbc3d8;
-    color: $text-white;
-    text-shadow: 2px 0px black;
-    height: 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    // VOIR SI LAISSE ABSOLUTE OU METTRE RELATIVE
-    top: 0px;
-    left: 10px;
-  }
 
   .navbar-item:hover, :focus {
     color: $text-purple-lighter;
