@@ -23,6 +23,32 @@
     justify-content: flex-start;
   }
 
+  .navbar-item-left {
+    // color: #cbc3d8;
+    color: $text-white;
+    text-shadow: 2px 0px black;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    // VOIR SI LAISSE ABSOLUTE OU METTRE RELATIVE
+    top: 0px;
+    left: 10px;
+  }
+
+  .navbar-item-mobile {
+    // flex: 0 1 auto;
+    display: flex;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    // color: $text-purple;
+    color: $text-white;
+    // text-shadow: 2px 0px black;
+    font-size: 18px;
+   }
+
 //////NAVBAR CENTER
   .navbar-center {
     display: flex;
@@ -30,7 +56,6 @@
     height: 65px;
   }
 
-// NAVBAR CENTER BUTTON
   .navbar-btn-plant {
     flex: 0 1 auto;
     cursor: pointer;
@@ -39,7 +64,8 @@
     // background-color: #372354;
     background-color: $violet-button;
     border-radius: 0.5em;
-    box-shadow: $yellow-orange 1px 1px 10px;
+    // box-shadow: $yellow-orange 1px 1px 10px;
+    box-shadow: $grid-orange 1px 1px 10px;
     // color: $text-purple;
     color: $text-white;
     text-shadow: 0px 3px black;
@@ -104,7 +130,6 @@
     margin-right: 0px;
   }
 
-// NAVBAR RIGHT ITEMS
   .navbar-item-box-right {
     height: 65px;
     display: flex;
@@ -153,7 +178,7 @@
     padding: 15px;
   }
 
-// NAVBAR ITEMS
+// NAVBAR ITEM
   .navbar-item {
     flex: 0 1 auto;
     cursor: pointer;
@@ -162,30 +187,6 @@
     color: $text-white;
     text-shadow: 2px 0px black;
    }
-  .navbar-item-mobile {
-    // flex: 0 1 auto;
-    display: flex;
-    position: relative;
-    left: 10px;
-    cursor: pointer;
-    // color: $text-purple;
-    color: $text-white;
-    text-shadow: 2px 0px black;
-   }
-
-  .navbar-item-left {
-    // color: #cbc3d8;
-    color: $text-white;
-    text-shadow: 2px 0px black;
-    height: 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    // VOIR SI LAISSE ABSOLUTE OU METTRE RELATIVE
-    top: 0px;
-    left: 10px;
-  }
 
   .navbar-item:hover, :focus {
     color: $text-purple-lighter;
@@ -214,6 +215,13 @@
     // font-size: 15px !important;
     // line-height: 22px !important;
     padding: 25px 25px;
+      .social-share-button {
+        .ssb-icon {
+        background-size: 10px 10px;
+        height: 9px;
+        width: 9px;
+  }
+}
   }
   .navbar-groot-dropdown-menu li > a:hover {
     background: transparent !important;
@@ -231,3 +239,8 @@
     border-left: 1px solid rgba(249, 162, 59, 0.2);
     border-top: 1px solid rgba(249, 162, 59, 0.2);
    }
+
+  #inside-dropdown {
+    display: flex;
+  }
+

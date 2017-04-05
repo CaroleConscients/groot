@@ -81,8 +81,8 @@
   }
 
   .project-font-title {
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 24px;
     letter-spacing: 2px;
     margin-top: 0px;
     // padding: 15px 15px 0px 15px;
@@ -103,20 +103,20 @@
   }
 
   .project-emphasized-text {
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
     // padding: 10px 15px 0px 15px;
     padding: 10px 0px 10px 0px;
     font-style: italic;
-    color: rgba(231, 231, 233, 0.5)!important;
+    // color: rgba(231, 231, 233, 0.5)!important;
+    color: rgba(244, 125, 67, 0.9) !important;
   }
+
   .project-emphasized-text-inside {
     // font-size: 12px;
     // font-style: italic;
     // color: $text-purple;
     // color: #ca8538;
   }
-
-
 
 
