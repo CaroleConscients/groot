@@ -12,3 +12,9 @@ $(function() {
     }
   });
 });
+
+// Hide drop down when clicked
+$(".dropdown-menu a").click(function() {
+    $(this).closest(".dropdown-menu").prev().dropdown("toggle");
+});
+
