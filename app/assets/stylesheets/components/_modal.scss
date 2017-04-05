@@ -66,6 +66,8 @@
 
   .groot-modal-header {
     border: none;
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 
   .groot-modal-title {
@@ -104,12 +106,43 @@
     border: none;
     font-style: italic;
     text-align: right;
-      p {
-      font-size: 9px;
-      padding: 15px 0px 10px 22px;
-        @media (min-width: $screen-lg-min) {
+      h4 {
         font-size: 12px;
-         padding: 30px 0px 30px 22px;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        text-align: center;
+        padding-top: 15px;
+      line-height: 15px;
+        @media (min-width: $screen-lg-min) {
+          font-size: 18px;
+          text-align: center;
+          padding-top: 25px;
+          font-style: normal;
+          line-height: 28px;
+          letter-spacing: 2px;
+        }
+      }
+      h6 {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+        font-style: normal;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 0px;
+        @media (min-width: $screen-lg-min) {
+          font-size: 13px;
+          text-align: center;
+          font-style: normal;
+          letter-spacing: 1px;
+          padding: 16px;
+        }
+      }
+      p {
+        font-size: 9px;
+        padding: 15px 0px 10px 22px;
+          @media (min-width: $screen-lg-min) {
+          font-size: 12px;
+          padding: 30px 0px 30px 22px;
         }
       }
       a:hover {
@@ -119,7 +152,6 @@
       }
   }
 
-// .groot-modal-a
   .twitter-plant-btn {
     font-size: 11px;
     color: $text-white;
@@ -132,4 +164,28 @@
       }
   }
 
+  .modal-share-congrats {
+    text-align: center;
+    padding-top: 10px;
+    .social-share-button {
+      .ssb-icon {
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        margin: 0px 3px;
+        border-radius: 50%;
+      }
+    }
+      @media (min-width: $screen-lg-min){
+        .social-share-button {
+          .ssb-icon {
+            background-size: 30px 30px;
+            height: 30px;
+            width: 30px;
+            margin: 0px 5px;
+            border-radius: 50%;
+          }
+        }
+      }
+  }
 
