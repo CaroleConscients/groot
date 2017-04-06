@@ -133,11 +133,12 @@
       }
   }
 
-  .project-emphasized-text-inside {
-    // font-size: 12px;
-    // font-style: italic;
-    // color: $text-purple;
-    // color: #ca8538;
+  .groot-button-link {
+    font-size: 11px !important;
+    text-decoration: underline;
+    @media (min-width: $screen-lg-min) {
+      font-size: 12px;
+    }
   }
 
 
