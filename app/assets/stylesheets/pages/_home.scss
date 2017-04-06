@@ -76,11 +76,15 @@
     padding: 0px 0px 99999px 0px;
   }
   .inner {
+    margin-bottom: 153px;
+      @media (min-width: $screen-lg-min) {
+      margin-bottom: 0px;
+      }
   }
 
   #project {
     position: relative;
-    top: -45px;
+    top: -60px;
    }
 
 //// project font
@@ -90,35 +94,43 @@
   }
 
   .project-font-title {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 16px;
     letter-spacing: 2px;
     margin-top: 0px;
-    // padding: 15px 15px 0px 15px;
-    padding-top: 30px;
-            /* Tablette paysage et Desktop MD ET LG*/
-        // @media (min-width: $screen-md-min) {
-        //    font-size: 45px;
-        //  }
+    padding: 25px 0px 5px 0px;
+      @media (min-width: $screen-lg-min) {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin-top: 0px;
+        // padding: 15px 15px 0px 15px;
+        padding-top: 30px;
+      }
   }
 
   .project-font-text {
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 11px;
     text-align: justify;
     letter-spacing: 0.5px;
     // padding: 0px 15px;
     padding: 0px;
+      @media (min-width: $screen-lg-min) {
+        font-size: 12px;
+      }
   }
 
   .project-emphasized-text {
-    font-size: 15px;
+    font-size: 12px;
     text-align: justify;
-    // padding: 10px 15px 0px 15px;
     padding: 10px 0px 10px 0px;
     font-style: italic;
     // color: rgba(231, 231, 233, 0.5)!important;
     color: rgba(244, 125, 67, 0.9) !important;
+      @media (min-width: $screen-lg-min) {
+      font-size: 15px;
+      }
   }
 
   .project-emphasized-text-inside {

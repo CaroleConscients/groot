@@ -38,15 +38,13 @@
   }
 
   .navbar-item-mobile {
-    // flex: 0 1 auto;
     display: flex;
     position: relative;
     left: 10px;
     cursor: pointer;
     // color: $text-purple;
     color: $text-white;
-    // text-shadow: 2px 0px black;
-    font-size: 18px;
+    font-size: 17px;
    }
 
 //////NAVBAR CENTER
@@ -69,7 +67,7 @@
     // color: $text-purple;
     color: $text-white;
     text-shadow: 0px 3px black;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 2px;
       @media (min-width: $screen-sm-min) {
         font-size: 12px;

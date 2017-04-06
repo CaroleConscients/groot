@@ -1,14 +1,7 @@
 <div class="navbar-groot">
-<!-- DESKTOP - NAVBAR RIGHT :-->
-  <div class="navbar-right">
-      <div class="navbar-item-box-right hidden-xs hidden-sm hidden-md">
-        <p class="navbar-small-text ">Partager :</p>
-        <%= social_share_button_tag %>
-      </div>
-  </div>
-<!-- ......................................................... -->
+<!-- USER SIGNED-IN -->
   <% if user_signed_in? %>
-<!-- DESKTOP - NAVBAR LEFT - USER SIGNED-IN :-->
+  <!-- DESKTOP - NAVBAR LEFT - USER SIGNED-IN :-->
     <div class="navbar-left hidden-xs hidden-sm hidden-md">
       <div class="navbar-item-left ">
         <div class="dropdown">
@@ -18,7 +11,7 @@
             <!-- <li><%#= link_to "Voir la forêt Groot", foret_groot_path %></li> -->
             <li>
               <%= link_to destroy_user_session_path, method: :delete do %>
-                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Me déconnecter") %>
+                <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
               <% end %>
             </li>
           </ul>
@@ -26,7 +19,7 @@
       </div>
     </div>
 
-<!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-IN : -->
+  <!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-IN : -->
     <div class="navbar-left navbar-item-mobile hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
@@ -35,28 +28,35 @@
           <li><%= link_to "Télécharger mon certificat", download_certificate_path %></li>
           <li id="inside-dropdown"><a>Partager :<%= social_share_button_tag %></a></li>
           <li><%= link_to destroy_user_session_path, method: :delete do %>
-            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Me déconnecter") %>
+            <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
           <% end %>
           </li>
         </ul>
       </div>
     </div>
 
-<!-- CENTER - USER SIGNED-IN     -->
+  <!-- CENTER - USER SIGNED-IN     -->
   <div class="navbar-center">
     <p class="navbar-btn-planted">MERCI D'AVOIR PLANTE GROOT <%= current_user.tree_count %> !</p>
   </div>
 
+  <!-- DESKTOP - NAVBAR RIGHT -USER SIGNED-IN-->
+  <div class="navbar-right">
+      <div class="navbar-item-box-right hidden-xs hidden-sm hidden-md">
+        <p class="navbar-small-text ">Partager :</p>
+        <%= social_share_button_tag %>
+      </div>
+  </div>
   <% else %>
-
-<!-- DESKTOP - NAVBAR LEFT - USER SIGNED-OUT -->
+<!-- USER SIGNED-OUT -->
+  <!-- DESKTOP - NAVBAR LEFT - USER SIGNED-OUT -->
     <div class="navbar-left hidden-xs hidden-sm hidden-md">
       <div class="navbar-item-left">
         <%#= link_to "", user_twitter_omniauth_authorize_path, class: "navbar-item fa fa-user fa-lg" %>
       </div>
     </div>
 
-<!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-OUT -->
+  <!-- MOBILE - LEFT DROPDOWN LIST - USER SIGNED-OUT -->
     <div class="navbar-left navbar-item-mobile hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
@@ -69,10 +69,15 @@
         </ul>
       </div>
     </div>
-<!-- CENTER - USER SIGNED-OUT     -->
+  <!-- CENTER - USER SIGNED-OUT     -->
     <div class="navbar-center">
       <%= link_to 'PLANTEZ VOTRE GROOT', new_user_registration_path, :remote => true, 'data-toggle' => "modal", 'data-target' => "#twitter_modal", method: 'get', :class => 'navbar-btn-plant' %>
     </div>
 
+  <!-- DESKTOP - NAVBAR RIGHT -USER SIGNED-OUT-->
+  <div class="navbar-right">
+      <div class="navbar-item-box-right hidden-xs hidden-sm hidden-md">
+      </div>
+  </div>
   <% end %>
 </div>
