@@ -1,0 +1,44 @@
+.policy {
+  h1 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 16px;
+    @media (min-width: $screen-lg-min) {
+      font-size: 24px;
+      padding-top: 40px;
+    }
+  }
+  h2 {
+    color: rgba(244, 125, 67, 0.9);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    @media (min-width: $screen-lg-min) {
+      font-size: 20px;
+      letter-spacing: 1.5px;
+    }
+  }
+  h3 {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    @media (min-width: $screen-lg-min) {
+    font-size: 17px;
+    margin: 5px 0px;
+    }
+  }
+  p {
+    font-weight: lighter;
+    font-size: 11px;
+    text-align: justify;
+    padding: 10px 0px;
+    letter-spacing: 0.5px;
+    @media (min-width: $screen-lg-min) {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 15px 0px;
+    }
+  }
+}
+
