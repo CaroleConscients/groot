@@ -1,6 +1,6 @@
 <div class="certificate">
   <%= image_tag "certificate.jpg" %>
-  <h2 id="name"><%= @user.name.nil? ? @user.nickname : @user.name %></h2>
+  <h2 id="name"><%= @user.nickname.nil? ? "Guardian" : @user.nickname %></h2>
   <h2 id="tree_id"><%= @user.card.tree_id %></h2>
 </div>
 
