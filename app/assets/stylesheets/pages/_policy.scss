@@ -1,3 +1,13 @@
+.return-home {
+    font-family: Cinzel;
+    font-size: 8px;
+   @media (min-width: $screen-lg-min) {
+    font-family: Cinzel;
+    font-size: 10px;
+    padding: 25px 70px 0px 70px;
+    }
+}
+
 .policy {
   h1 {
     font-size: 12px;
@@ -5,7 +15,8 @@
     line-height: 16px;
     @media (min-width: $screen-lg-min) {
       font-size: 24px;
-      padding-top: 40px;
+      padding-top: 20px;
+      padding-bottom: 10px;
     }
   }
   h2 {
