@@ -26,7 +26,7 @@
         <ul class="dropdown-menu navbar-groot-dropdown-menu">
           <li><%= link_to "Découvrir le projet", '#project'%></li>
           <li><%= link_to "Télécharger mon certificat", download_certificate_path %></li>
-          <li id="inside-dropdown"><a>Partager :<%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", image: meta_image, desc: meta_description, via: "@MarvelFR") %></a></li>
+          <li id="inside-dropdown"><a>Partager :<%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", 'data-twitter-title' => meta_title, image: meta_image, desc: meta_description, via: "MarvelFR") %></a></li>
           <li><%= link_to destroy_user_session_path, method: :delete do %>
             <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
           <% end %>
@@ -44,7 +44,7 @@
   <div class="navbar-right">
       <div class="navbar-item-box-right hidden-xs hidden-sm hidden-md">
         <p class="navbar-small-text ">Partager :</p>
-        <%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", image: meta_image, desc: meta_description, via: "@MarvelFR") %>
+        <%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", 'data-twitter-title' => meta_title, image: meta_image, desc: meta_description, via: "MarvelFR") %>
       </div>
   </div>
   <% else %>
@@ -62,7 +62,7 @@
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu navbar-groot-dropdown-menu">
           <li><%= link_to "Découvrir le projet", '#project' %></li>
-          <li id="inside-dropdown"><a>Partager : <%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", image: meta_image, desc: meta_description, via: "@MarvelFR") %></a></li>
+          <li id="inside-dropdown"><a>Partager : <%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", 'data-twitter-title' => meta_title, image: meta_image, desc: meta_description, via: "MarvelFR") %></a></li>
           <!-- <li><%#= link_to "Mon Groot (login)", user_twitter_omniauth_authorize_path %></li> -->
           <!-- <li><%#= link_to "Me connecter", user_twitter_omniauth_authorize_path %><i class="fa fa-user nimporte"></i></li> -->
           <!-- <li><%#= link_to " Me connecter", user_twitter_omniauth_authorize_path, class:"fa fa-user" %></li> -->
