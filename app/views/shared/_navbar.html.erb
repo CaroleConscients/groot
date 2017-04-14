@@ -44,7 +44,7 @@
   <div class="navbar-right">
       <div class="navbar-item-box-right hidden-xs hidden-sm hidden-md">
         <p class="navbar-small-text ">Partager :</p>
-        <%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", image: meta_image, desc: meta_description, via: "@MarvelFR") %>
+        <%= social_share_button_tag(meta_title, url: "http://plantez-un-groot.fr", 'data-twitter-title' => meta_title, image: meta_image, desc: meta_description, via: "MarvelFR") %>
       </div>
   </div>
   <% else %>
