@@ -14,14 +14,10 @@ class User < ApplicationRecord
     reset_last_turned
     unless card.nil?
       user_count = User.count
-      # user count for navbar message
-      self.update(tree_count: user_count)
       # generate the tree_id with prefix
       tree_id = generate_tree_id(user_count)
       card.update(turned: true, last_turned: true, tree_id: tree_id, user: self)
-      self.update(congratulation: true)
-      # REMOVE NEXT LINE BEFORE PRODUCTION!
-      self.update(admin: true)
+      self.update(tree_count: user_count, congratulation: true)
       UserMailer.email_certificate(self.id).deliver_later(wait: 2.seconds)
     else
       flash.notice = "Tous les groots ont été plantés ! Rdv dans les salles le 28 avril."
