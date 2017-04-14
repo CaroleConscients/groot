@@ -30,4 +30,8 @@ class PagesController < ApplicationController
   def forest
   end
 
+  # Stress test
+  # def stress_test
+  # end
+
 end
