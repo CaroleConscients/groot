@@ -1,10 +1,13 @@
 .return-home {
     font-family: Cinzel;
     font-size: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
    @media (min-width: $screen-lg-min) {
     font-family: Cinzel;
     font-size: 10px;
-    padding: 25px 70px 0px 70px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     }
 }
 
