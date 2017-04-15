@@ -5,7 +5,7 @@
     <div class="navbar-left hidden-xs hidden-sm hidden-md">
       <div class="navbar-item-left ">
         <div class="dropdown">
-          <div class="class dropdown-toggle navbar-small-text" id="navbar-groot-menu" data-toggle="dropdown"><%= current_user.nickname.nil? ? "Gardien" : current_user.nickname %></div>
+          <div class="class dropdown-toggle navbar-small-text cursor-nickname" id="navbar-groot-menu" data-toggle="dropdown"><%= current_user.nickname.nil? ? "Gardien" : current_user.nickname %></div>
           <ul class="dropdown-menu dropdown-menu-right navbar-groot-dropdown-menu">
             <li><%= link_to "Télécharger le certificat", download_certificate_path %></li>
             <!-- <li><%#= link_to "Voir la forêt Groot", foret_groot_path %></li> -->

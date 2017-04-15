@@ -33,16 +33,17 @@
     right: 10px;
   }
 
-  .footer-contact-text, a {
+  .footer-contact-text {
+    a {
     font-size: 10px;
     letter-spacing: 1px;
     line-height: 12px;
     color: $text-white;
     margin: 0px;
     padding: 0px 5px;
+    }
   }
-
-  // .footer-contact-text, a, a:hover, a:focus {
+  // .footer-contact-text, a {
   //   font-size: 10px;
   //   letter-spacing: 1px;
   //   line-height: 12px;
@@ -50,6 +51,19 @@
   //   margin: 0px;
   //   padding: 0px 5px;
   // }
+
+  .footer-item {
+    font-size: 8px;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    color: #e7e7e9;
+    margin: 0px;
+     @media (min-width: $screen-lg-min){
+      font-size: 10px;
+     }
+  }
+
   .footer-logo {
     height: 12px;
   }
