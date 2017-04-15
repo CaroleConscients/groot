@@ -1,6 +1,8 @@
 <div class="certificate">
   <%= image_tag "certificate.jpg" %>
-  <h2 id="name"><%= @user.nickname.nil? ? "Gardien" : @user.nickname %></h2>
+  <div id="boxname">
+  <h2>@<%= @user.nickname.nil? ? "Gardien" : @user.nickname.upcase %></h2>
+  </div>
   <h2 id="tree_id"><%= @user.card.tree_id %></h2>
 </div>
 
@@ -12,26 +14,30 @@
     color: #499bcd;
   }
   h2 {
-    color: #499bcd;
+    color: #5984ac;
     font-family: Droid Sans, sans-serif;
     font-size: 31px;
-    /*letter-spacing: 2px;*/
+    letter-spacing: 1.5px;
+    text-align: center;
   }
   .certificate {
-    height: 1024px;
-    width: 1558px;
+    height: 1031px;
+    width: 1559px;
     position: relative;
   }
-  #name {
+  #boxname {
     position: absolute;
-    top: 575px;
-    left: 150px;
+    top: 576px;
+    left: 97px;
+    width: 335px;
   }
   #tree_id {
-    color: #499bcd;
+    font-family: Droid Sans, sans-serif;
+    color: #87a3b7;
     position: absolute;
     top: 115px;
-    left: 400px;
-    font-size: 18px;
+    left: 397px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
   }
 </style>
