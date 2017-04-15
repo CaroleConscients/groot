@@ -49,27 +49,21 @@
 
 <!-- TIMELINE UNIQUEMENT VISIBLE SUR DESKTOP ET TABLETTE HORIZONTAL -->
 <div class="col-lg-4 visible-lg no-padding-side">
-  <!-- <div class="twitter-header"><p>#GardiensDeLaGalaxieVol2 #JournéeDeLaTerre</p></div> -->
   <div class="timeline-style">
   <div class="inner-timeline">
-    <a class="twitter-timeline"
-    href="https://twitter.com/hashtag/jesappellegroot"
-    data-theme="light"
-    data-height="600px"
-    data-chrome="transparent, noheader, noborders, nofooter, noscrollbar"
-    data-border-color="#00001f"
-    data-widget-id="842011447748132865">Tweets sur #jesappellegroot</a>
+  <a class="twitter-timeline"
+  href="https://twitter.com/search?q=%23GardiensdelaGalaxie2%20%23Journ%C3%A9edelaTerre"
+  data-theme="light"
+  data-height="650px"
+  data-chrome="transparent, noheader, noborders, nofooter, noscrollbar"
+  data-border-color="#00001f"
+  data-widget-id="853369275536506881">Tweets sur #GardiensdelaGalaxie2 #JournéedelaTerre</a>
   </div>
   </div>
 </div>
 
 </div>
-<!-- footer -->
-<!-- <div class="footer">
-<div class="footer-left footer-contact-text footer-logo"><%#= image_tag "LogoPP.png" %></div>
-<div class="footer-right footer-contact-text"><%#=mail_to "carole@purprojet.com", "Contact",
-         subject: "A propos de Groot"%></div>
-</div> -->
+
 <!-- footer -->
 <div class="footer">
   <div class="footer-left footer-logo"><%= image_tag "LogoPP.png" %></div>
@@ -92,7 +86,11 @@
   <% end %>
 
 
- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script>
+<!-- TOP TWEETS ONLY -->
+<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+
+<!-- TOUS LES TWEETS -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 
