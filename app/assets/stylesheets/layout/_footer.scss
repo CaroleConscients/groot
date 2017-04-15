@@ -53,12 +53,15 @@
   // }
 
   .footer-item {
+    font-size: 8px;
     padding: 0 10px;
-    font-size: 10px;
     letter-spacing: 1px;
     line-height: 12px;
     color: #e7e7e9;
     margin: 0px;
+     @media (min-width: $screen-lg-min){
+      font-size: 10px;
+     }
   }
 
   .footer-logo {
