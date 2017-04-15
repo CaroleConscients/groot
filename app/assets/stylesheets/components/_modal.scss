@@ -154,13 +154,17 @@
 
   .twitter-plant-btn {
     font-size: 11px;
-    color: $text-white;
+    font-weight: bolder;
+    color: white;
     padding: 5px 5px;
     border-radius: 1px;
     background: $twitter-color;
       @media (min-width: $screen-lg-min){
         font-size: 14px;
+        letter-spacing: 1px;
         padding: 10px 10px;
+        border-radius: 10px;
+        border: 1px solid #064d7f;
       }
   }
 
