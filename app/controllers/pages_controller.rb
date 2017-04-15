@@ -21,14 +21,16 @@ class PagesController < ApplicationController
 
   # Required by twitter
   def privacy
+    @turned_counter = Card.where(turned: true).count
   end
 
   def terms
+    @turned_counter = Card.where(turned: true).count
   end
 
   # Forest map
-  def forest
-  end
+  # def forest
+  # end
 
   # Stress test
   # def stress_test

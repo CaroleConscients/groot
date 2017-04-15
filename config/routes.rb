@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   get 'terms', to: 'pages#terms'
 
   # Page with forest map
-  get 'foret-groot', to: 'pages#forest'
+  # get 'foret-groot', to: 'pages#forest'
 
   # Stress test
   # get 'loaderio-51b2f97f3c21b82ca26cc5f95eebf17d', to: 'pages#stress_test' 
