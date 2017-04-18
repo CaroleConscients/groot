@@ -59,9 +59,12 @@
     line-height: 12px;
     color: #e7e7e9;
     margin: 0px;
-     @media (min-width: $screen-lg-min){
+    @media (min-width: $screen-lg-min) {
       font-size: 10px;
-     }
+    }
+    a {
+      text-decoration: none;
+    }
   }
 
   .footer-logo {
