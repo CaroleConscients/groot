@@ -1,7 +1,3 @@
-<!-- <div class="return-home">
-<p><u><%#= link_to "Home", root_path %></u> > Conditions d'utilisation et Politique de confidentialité</p>
-</div> -->
-
 <div class="container policy">
 <div class="return-home"><u><%= link_to "Home", root_path %></u> > Conditions d'utilisation et Politique de confidentialité</div>
   <h1>CONDITIONS D’UTILISATION & POLITIQUE DE CONFIDENTIALITE</h1>
@@ -90,10 +86,10 @@
 
 <!-- Modal connect with twitter -->
   <%= render "devise/registrations/new" %>
-  
+
 <!-- footer -->
 <div class="footer">
-  <div class="footer-left footer-logo"><%= image_tag "LogoPP.png" %></div>
+  <div class="footer-left footer-logo"><%= image_tag("LogoPP.png", size: "65x15") %></div>
   <div class="footer-right">
     <div class= "footer-item"><%= link_to "Termes et Conditions", privacy_path %></div>
     <div class="footer-item">
