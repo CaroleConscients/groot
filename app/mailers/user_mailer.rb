@@ -13,7 +13,7 @@ class UserMailer < ApplicationMailer
     mail.attachments['certificate.pdf'] = pdf
 
     # Attach parcel.klm
-    mail.attachments['Parcel.kml'] = File.join("#{Rails.root}/app/assets/images/Parcel.kml")
+    mail.attachments['Parcel.kml'] = File.read("#{Rails.root}/app/assets/images/Parcel.kml")
 
     # This will render a view in `app/views/user_mailer`!
     mail(to: @user.email, subject: "Plantez un groot – Votre certificat #{@tree_id}")
