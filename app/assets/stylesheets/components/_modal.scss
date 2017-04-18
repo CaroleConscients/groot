@@ -72,14 +72,14 @@
 
   .groot-modal-title {
     color: $text-white;
-    padding-top: 15px;
+    margin-top: 15px;
     font-size: 13px;
     letter-spacing: 2px;
     text-align: center;
     line-height: 18px;
       @media (min-width: $screen-lg-min) {
         font-size: 20px;
-        padding-top: 20px;
+        margin-top: 20px;
       }
   }
 
@@ -146,9 +146,10 @@
         }
       }
       a:hover {
+        transition: 0.2s;
         color: $text-white;
-        text-decoration: underline;
-      //   cursor: pointer;
+        text-decoration: none;
+        cursor: pointer;
       }
   }
 
