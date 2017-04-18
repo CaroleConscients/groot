@@ -2,29 +2,21 @@
   .fixed-container {
      overflow: hidden;
   }
-
 //// grid et cards
   .grid-col-style {
     padding: 0px 0px;
   }
-
   .grid-cache-bordered {
     border: 1px solid #382c6b;
   }
-
   .grid-cache-last-turned {
     border: 1px solid $text-white;
-    // box-shadow: #F9A23B -3px 1px 1px 3px;
-    // border-bottom: 0.5px solid #F9A23B;
-    // border-right: 0.5px solid #F9A23B;
   }
-
   .grid {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     }
-
   .card {
     line-height: 0;
     width: 2.5%;
@@ -32,7 +24,6 @@
       width: 100%;
     }
   }
-
   .full-image {
     img {
       width: 100%;
@@ -40,7 +31,6 @@
   }
 
 ///// timeline
-
   .no-padding-side {
     padding-left: 0px;
     padding-right: 0px;
@@ -81,7 +71,6 @@
       margin-bottom: 0px;
       }
   }
-
   #project {
     position: relative;
     top: -60px;
@@ -92,7 +81,6 @@
     padding-right: 30px;
     padding-left: 30px;
   }
-
   .project-font-title {
     font-size: 12px;
     line-height: 16px;
@@ -104,35 +92,29 @@
         line-height: 24px;
         letter-spacing: 2px;
         margin-top: 0px;
-        // padding: 15px 15px 0px 15px;
         padding-top: 30px;
       }
   }
-
   .project-font-text {
     font-weight: lighter;
     font-size: 11px;
     text-align: justify;
     letter-spacing: 0.5px;
-    // padding: 0px 15px;
     padding: 0px;
       @media (min-width: $screen-lg-min) {
         font-size: 12px;
       }
   }
-
   .project-emphasized-text {
     font-size: 12px;
     text-align: justify;
     padding: 10px 0px 10px 0px;
     font-style: italic;
-    // color: rgba(231, 231, 233, 0.5)!important;
     color: rgba(244, 125, 67, 0.9) !important;
       @media (min-width: $screen-lg-min) {
-      font-size: 15px;
+      font-size: 14px;
       }
   }
-
   .groot-button-link {
     font-size: 11px !important;
     text-decoration: underline;
