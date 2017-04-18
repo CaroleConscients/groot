@@ -1,5 +1,5 @@
 meta_product_name: "Plantez un Groot"
 meta_title: "Devenez les Gardiens de notre Galaxie !"
 meta_description: "Devenez les Gardiens de notre Galaxie en plantant un Groot pour la #JournéedelaTerre #GardiensdelaGalaxie2 Rdv sur plantez-un-groot.fr"
-meta_image: "meta-certificate.jpg"    # Une image dans votre dossier app/assets/images/
+# meta_image: "meta-certificate.jpg"    # Une image dans votre dossier app/assets/images/
 twitter_account: "@MarvelFR"          # indispensable pour les Twitter Cards
