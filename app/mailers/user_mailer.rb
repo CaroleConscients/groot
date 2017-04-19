@@ -13,10 +13,10 @@ class UserMailer < ApplicationMailer
     mail.attachments['certificate.pdf'] = pdf
 
     # Attach parcel.klm
-    if User.count < 1218
-      mail.attachments['Parcel.kml'] = File.read("#{Rails.root}/app/assets/images/Parcel_1.kml")
+    if @user.tree_count < 1218
+      mail.attachments['Parcel_1.kml'] = File.read("#{Rails.root}/app/assets/images/Parcel_1.kml")
     else
-      mail.attachments['Parcel.kml'] = File.read("#{Rails.root}/app/assets/images/Parcel_2.kml")
+      mail.attachments['Parcel_2.kml'] = File.read("#{Rails.root}/app/assets/images/Parcel_2.kml")
     end
 
     # This will render a view in `app/views/user_mailer`!
