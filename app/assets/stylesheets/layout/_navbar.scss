@@ -24,8 +24,8 @@
   }
 
   .navbar-item-left {
-    // color: #cbc3d8;
     color: $text-white;
+    // color: $text-yellow;
     text-shadow: 2px 0px black;
     height: 55px;
     display: flex;
@@ -42,8 +42,8 @@
     position: relative;
     left: 10px;
     cursor: pointer;
-    // color: $text-purple;
     color: $text-white;
+    // color: $text-yellow;
     font-size: 17px;
    }
 
@@ -59,13 +59,11 @@
     cursor: pointer;
     padding: 6px 10px;
     margin: auto;
-    // background-color: #372354;
     background-color: $violet-button;
     border-radius: 0.5em;
-    // box-shadow: $yellow-orange 1px 1px 10px;
     box-shadow: $grid-orange 1px 1px 10px;
-    // color: $text-purple;
     color: $text-white;
+    // color: $text-yellow;
     text-shadow: 0px 3px black;
     font-size: 12px;
     letter-spacing: 2px;
@@ -99,12 +97,11 @@
     cursor: pointer;
     padding: 6px 10px;
     margin: auto;
-    // background-color: #372354;
     background-color: $violet-button;
     border-radius: 0.5em;
     box-shadow: $yellow-orange 1px 1px 10px;
-    // color: $text-purple;
     color: $text-white;
+    // color: $text-yellow !important;
     text-shadow: 0px 3px black;
     font-size: 9px;
     letter-spacing: 2px;
