@@ -36,7 +36,7 @@
     padding-right: 0px;
   }
   .timeline-style {
-    background-color: rgba(253, 252, 313, 1);
+    // background-color: rgba(253, 252, 313, 1);
     border-left: 1.9px solid $darkblueone;
     margin-bottom: -99999px;
     padding: 0px 30px 99999px 30px;
@@ -110,7 +110,8 @@
     text-align: justify;
     padding: 10px 0px 10px 0px;
     font-style: italic;
-    color: rgba(244, 125, 67, 0.9) !important;
+    // color: rgba(244, 125, 67, 0.9) !important;
+    color: #de723a !important;
       @media (min-width: $screen-lg-min) {
       font-size: 14px;
       }
