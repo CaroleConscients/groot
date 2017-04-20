@@ -25,19 +25,13 @@
     border: none;
   }
 
-  .groot-modal-close:focus {
+  .groot-modal-close, :focus {
     color: $text-white;
     opacity: 1;
     text-shadow: none;
+    outline: none !important;
   }
 
-  // .groot-modal-close:focus {
-  //   color: $text-white;
-  //   opacity: 1;
-  //   text-shadow: none;
-  //   text-decoration: none;
-  //   border: none;
-  // }
 
 // container de la modal
   .groot-modal-dialog {
