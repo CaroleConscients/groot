@@ -7,8 +7,9 @@ class PagesController < ApplicationController
     @grid_colors = ["grid_color_1.jpg", "grid_color_2.jpg", "grid_color_3.jpg", "grid_color_4.jpg", "grid_color_1.jpg", "grid_color_2.jpg", "grid_color_3.jpg"]
   end
 
-  def wait 
-  end
+  # def wait 
+  # end
+  
   # HTML certificate to convert to pdf
   # The navbar is escaped in that view cf:layout
   def certificate
