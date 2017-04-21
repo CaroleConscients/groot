@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   # Homepage
-  root to: 'pages#home'
+  root to: 'pages#wait'
 
   # Certificate in html to convert to pdf
   get 'certificate/user/:id', to: 'pages#certificate'
