@@ -1,10 +1,7 @@
-<!-- Mobile first donc Grid en 1 puis Description -->
-<!-- Grid -->
 <div class="fixed-container">
 
 <div class="col-xs-13 col-md-13 col-lg-5 col-lg-push-4 grid-col-style">
   <div class="grid">
-  <!-- We can load the frame faster if all cards are turned -->
     <% if @turned_counter == 2000 %>
       <div class="full-image">
         <%= image_tag "guardian.jpg" %>
@@ -29,7 +26,6 @@
   </div>
 </div>
 
-<!-- Description. S'inverse avec la grid à partid de MD et superieur -->
 <div class="col-xs-13 col-md-13 col-lg-4 col-lg-pull-5 project-font project-style">
   <!-- The following div is used as anchor for the scroll on XS -->
   <div id="project"></div>
@@ -47,7 +43,6 @@
   </div>
 </div>
 
-<!-- TIMELINE UNIQUEMENT VISIBLE SUR DESKTOP ET TABLETTE HORIZONTAL -->
 <div class="col-lg-4 visible-lg no-padding-side">
   <div class="timeline-style">
   <div class="inner-timeline">
@@ -55,7 +50,7 @@
   href="https://twitter.com/hashtag/GardiensdelaGalaxie2"
   data-lang="fr"
   data-theme="light"
-  data-height="710px"
+  data-height="715px"
   data-chrome="transparent, noheader, noborders, noscrollbar"
   data-border-color="#00001f"
   data-link-color="#de723a"
@@ -63,10 +58,8 @@
   </div>
   </div>
 </div>
-
 </div>
 
-<!-- footer -->
 <div class="footer">
   <div class="footer-left footer-logo"><%= image_tag("LogoPP.png", size: "65x15") %></div>
   <div class="footer-right">
@@ -87,8 +80,6 @@
     <%= render "pages/congratulation" %>
   <% end %>
 
-<!-- TOUS LES TWEETS 2#-->
-<!-- <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
