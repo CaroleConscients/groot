@@ -36,7 +36,7 @@
   </head>
   <body>
     <!-- Escape the navbar for the certificate view -->
-    <% unless action_name == 'certificate' %>
+    <% unless action_name == 'certificate' || 'wait' %>
       <%= render 'shared/navbar' %>
     <% end %>
       <%= render 'shared/flashes' %>
